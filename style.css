@@ -670,4 +670,19 @@ video {
   outline-style: solid;
 }
 
+/* @layer components{
+.btn {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+
+.btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700;
+}
+
+.btn-secondary {
+    @apply bg-gray-600 hover:bg-gray-700;
+}
+} */
+
+
 
