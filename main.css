@@ -38,5 +38,9 @@
 }
 
 
-
-
+/* Home Header */
+#home-header{
+ background: url('./img/home/home-header.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+}

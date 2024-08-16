@@ -826,11 +826,15 @@ h4 {
   outline-style: solid;
 }
 
+/* Home Header */
+
+#home-header{
+  background: url('./img/home/home-header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(123 150 69 / var(--tw-bg-opacity));
 }
-
-
-
-
