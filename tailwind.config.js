@@ -9,8 +9,8 @@ module.exports = {
       'md': { 'min': '768px', 'max': '979px' },
       'lg': { 'min': '980px', 'max': '1024px' },
       'xl': { 'min': '1025px', 'max': '1180px' },
-      '2xl': { 'min': '1181px', 'max': '1439px' },
-      '3xl': { 'min': '1440px' },
+      '2xl': { 'min': '1181px', 'max': '1399px' },
+      '3xl': { 'min': '1400px' },
     },
     container: {
       center: true,
@@ -20,7 +20,8 @@ module.exports = {
         md: '608px',
         lg: '90%',
         xl: '90%',
-        '2xl': '1396px',
+        '2xl': '90%',
+        '3xl': '1396px',
       },
     },
 
