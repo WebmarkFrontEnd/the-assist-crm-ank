@@ -5,7 +5,7 @@
 
 @layer components{
   .btn{
-      @apply px-8 py-5 font-altivo inline-block bg-primary text-light rounded-full hover:bg-dark;
+      @apply px-8 py-5 text-lg font-altivo inline-block bg-primary text-light rounded-full uppercase hover:bg-dark;
   }
 
   .btn-light{
@@ -17,11 +17,23 @@
   }
 
   h1,h2,h3,h4,h5,h6{
-    @apply font-altivo text-secondary;
+    @apply font-altivo text-secondary font-light uppercase;
   }
 
   p{
-    @apply font-bai text-secondary;
+    @apply text-lg font-bai text-secondary font-normal;
+  }
+
+  h1,h2{
+    @apply text-6xl;
+  }
+
+  h3{
+    @apply text-4xl;
+  }
+
+  h4{
+    @apply text-2xl;
   }
 }
 
