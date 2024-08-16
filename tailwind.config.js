@@ -29,6 +29,12 @@ module.exports = {
       'primary': '#7B9645',
       'secondary': '#53514D',
       'light': '#fff',
+      'dark': '#201818',
+    },
+
+    fontFamily: {
+      altivo: ['altivo', 'sans-serif'],
+      bai: ['bai-jamjuree', 'serif'],
     },
 
     plugins: [],
