@@ -909,6 +909,8 @@ h4 {
   outline-style: solid;
 }
 
+/* Small Device Typography */
+
 @media (min-width: 481px) and (max-width: 767px){
   .btn {
     padding-top: 12px;
@@ -917,6 +919,23 @@ h4 {
     line-height: 1.75rem;
   }
 }
+
+/* Ipad Device Typography */
+
+@media (min-width: 768px) and (max-width: 979px){
+  h1,h2 {
+    font-size: 32px;
+  }
+
+  .btn {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+/* Large Device Typography */
 
 @media (min-width: 1025px) and (max-width: 1180px){
   p {
@@ -927,14 +946,8 @@ h4 {
   .btn {
     padding-top: 16px;
     padding-bottom: 16px;
-  }
-}
-
-/* Small Device Typography (md) */
-
-@media (min-width: 768px) and (max-width: 979px){
-  h1,h2 {
-    font-size: 32px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -947,6 +960,13 @@ h4 {
 
   h3 {
     font-size: 32px;
+  }
+
+  .btn {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -963,6 +983,13 @@ h4 {
 
   p {
     line-height: 1.33em;
+  }
+
+  .btn {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 

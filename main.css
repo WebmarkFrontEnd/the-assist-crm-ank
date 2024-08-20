@@ -34,13 +34,27 @@
   }
 }
 
-
+/* Small Device Typography */
 
 @screen sm{
   .btn{
       @apply py-[12px] text-lg;
   }
 }
+
+/* Ipad Device Typography */
+
+@screen md{
+h1,h2{
+  @apply text-3xl-md; 
+}
+
+.btn{
+      @apply py-[12px] text-lg;
+  }
+}
+
+/* Large Device Typography */
 
 @screen xl{
   p{
@@ -50,16 +64,14 @@
   .btn{
       @apply py-[16px];
   }
-}
 
-/* Small Device Typography (md) */
-@screen md{
-h1,h2{
-  @apply text-3xl-md; 
-}
+  .btn{
+      @apply py-[16px] text-lg;
+  }
 }
 
 /* Laptop Device Typography */
+
 @screen 2xl {
   h1,h2{
     @apply text-3xl-2xl;
@@ -68,9 +80,13 @@ h1,h2{
   h3 {
     @apply text-2xl-2xl;
   }
+  .btn{
+      @apply py-[16px] text-lg;
+  }
 }
 
 /* Desktop Device Typography */
+
 @screen 3xl {
   h1,h2{
     @apply text-3xl-2xl;
@@ -82,7 +98,16 @@ h1,h2{
   p{
     @apply leading-6;
   }
+
+  .btn{
+      @apply py-[16px] text-lg;
+  }
 }
+
+
+
+
+
 
 
 /* Container */
