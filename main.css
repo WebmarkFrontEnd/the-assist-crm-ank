@@ -5,37 +5,82 @@
 
 @layer components{
   .btn{
-      @apply px-8 py-5 text-lg font-altivo inline-block bg-primary text-light rounded-full uppercase hover:bg-dark;
+      @apply px-8 py-5 text-base font-altivo inline-block bg-primary text-light rounded-full uppercase hover:bg-dark;
   }
 
   .btn-light{
-      @apply bg-light text-dark hover:bg-primary hover:text-light;
+      @apply bg-light  text-dark hover:bg-primary hover:text-light;
   }
 
   .btn-dark{
     @apply bg-dark text-light hover:bg-primary hover:text-light;
   }
 
+
   h1,h2,h3,h4,h5,h6{
     @apply font-altivo text-secondary font-light uppercase;
   }
 
   p{
-    @apply text-lg font-bai text-secondary font-normal;
+    @apply text-base font-bai text-secondary font-normal;
   }
 
-  h1,h2{
-    @apply text-6xl;
-  }
-
-  h3{
-    @apply text-4xl;
+  h1,h2,h3{
+    @apply text-2xl;
   }
 
   h4{
-    @apply text-2xl;
+    @apply text-base;
   }
 }
+
+/* Small Device Typography (sm) */
+/* @screen sm{
+h1,h2,h3 {
+  @apply text-[32px]; 
+}
+} */
+
+/* 2XL Device Typography */
+/* @screen 2xl {
+  h1, h2 {
+    @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+
+  h4 {
+    @apply text-2xl;
+  }
+} */
+ 
+
+/* Medium Device Typography */
+
+@media (min-width:481px) {
+h1,h2,h3{
+  font-size: 32px;
+  }
+}
+
+/* Laptop Device Typography */
+
+@media (min-width:1181px)  {
+h1,h2{
+  font-size:56px;
+  }
+
+h3{
+font-size:32px;
+}
+
+h4{
+font-size:24px;
+}
+}
+
 
 
 /* Home Header */

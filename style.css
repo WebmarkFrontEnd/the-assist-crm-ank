@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #e5e7eb;
   /* 2 */
 }
 
@@ -600,8 +600,8 @@ video {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   font-family: altivo, sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -649,27 +649,22 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-  font-family: bai-jamjuree, serif;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-family: bai-jamjuree, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 400;
   --tw-text-opacity: 1;
   color: rgb(83 81 77 / var(--tw-text-opacity));
 }
 
-h1,h2 {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-h3 {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+h1,h2,h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 h4 {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .visible {
@@ -748,6 +743,11 @@ h4 {
   background-color: rgb(123 150 69 / var(--tw-bg-opacity));
 }
 
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -773,7 +773,7 @@ h4 {
 }
 
 .font-bai {
-  font-family: bai-jamjuree, serif;
+  font-family: bai-jamjuree, sans-serif;
 }
 
 .text-2xl {
@@ -784,6 +784,15 @@ h4 {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-\[32px\] {
+  font-size: 32px;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg {
@@ -824,6 +833,54 @@ h4 {
 
 .outline {
   outline-style: solid;
+}
+
+/* Small Device Typography (sm) */
+
+/* @screen sm{
+h1,h2,h3 {
+  @apply text-[32px]; 
+}
+} */
+
+/* 2XL Device Typography */
+
+/* @screen 2xl {
+  h1, h2 {
+    @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+
+  h4 {
+    @apply text-2xl;
+  }
+} */
+
+/* Medium Device Typography */
+
+@media (min-width:481px) {
+  h1,h2,h3{
+    font-size: 32px;
+  }
+}
+
+/* Laptop Device Typography */
+
+@media (min-width:1181px)  {
+  h1,h2{
+    font-size:56px;
+  }
+
+  h3{
+    font-size:32px;
+  }
+
+  h4{
+    font-size:24px;
+  }
 }
 
 /* Home Header */

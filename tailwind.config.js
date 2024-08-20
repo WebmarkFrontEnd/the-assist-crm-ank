@@ -2,7 +2,7 @@
 module.exports = {
   content: ["*"],
   theme: {
-    extend: {},
+
     screens: {
       'xs': { 'max': '480px' },
       'sm': { 'min': '481px', 'max': '767px' },
@@ -25,16 +25,20 @@ module.exports = {
       },
     },
 
-    colors: {
+
+    fontFamily: {
+      altivo: ['altivo', 'sans-serif'],
+      bai: ['bai-jamjuree', 'sans-serif'],
+    },
+
+   extend: {
+     
+      colors: {
       'primary': '#7B9645',
       'secondary': '#53514D',
       'light': '#fff',
       'dark': '#201818',
     },
-
-    fontFamily: {
-      altivo: ['altivo', 'sans-serif'],
-      bai: ['bai-jamjuree', 'serif'],
     },
 
     plugins: [],
