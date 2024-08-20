@@ -22,7 +22,7 @@
   }
 
   p{
-    @apply text-base font-bai text-secondary font-normal;
+    @apply text-base font-bai text-secondary font-normal leading-5;
   }
 
   h1,h2,h3{
@@ -34,16 +34,15 @@
   }
 }
 
+
+
 @screen sm{
-@layer components{
   .btn{
       @apply py-[12px] text-lg;
   }
 }
-}
 
 @screen xl{
-@layer components{
   p{
     @apply text-lg;
   }
@@ -51,7 +50,6 @@
   .btn{
       @apply py-[16px];
   }
-}
 }
 
 /* Small Device Typography (md) */
@@ -81,7 +79,11 @@ h1,h2{
   h3 {
     @apply text-2xl-2xl;
   }
+  p{
+    @apply leading-6;
+  }
 }
+
 
 /* Container */
 

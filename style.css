@@ -650,8 +650,8 @@ h1,h2,h3,h4,h5,h6 {
 p {
   font-family: bai-jamjuree, sans-serif;
   font-size: 1rem;
-  line-height: 1.5rem;
   font-weight: 400;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(83 81 77 / var(--tw-text-opacity));
 }
@@ -664,23 +664,6 @@ h1,h2,h3 {
 h4 {
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.btn {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-p {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.btn {
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .visible {
@@ -882,12 +865,21 @@ p {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .font-light {
   font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .uppercase {
@@ -918,9 +910,24 @@ p {
 }
 
 @media (min-width: 481px) and (max-width: 767px){
+  .btn {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1180px){
+  p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .btn {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 /* Small Device Typography (md) */
@@ -952,6 +959,10 @@ p {
 
   h3 {
     font-size: 32px;
+  }
+
+  p {
+    line-height: 1.33em;
   }
 }
 
