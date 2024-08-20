@@ -12,35 +12,44 @@ module.exports = {
       '2xl': { 'min': '1181px', 'max': '1399px' },
       '3xl': { 'min': '1400px' },
     },
-    container: {
+
+      container: {
       center: true,
       screens: {
         xs: '302px',
         sm: '462px',
         md: '608px',
-        lg: '90%',
-        xl: '90%',
-        '2xl': '90%',
-        '3xl': '1396px',
+        // lg: '90%',
+        // xl: '90%',
+        // '2xl': '90%',
+        // '3xl': '1396px',
       },
-    },
-
+      },     
+     
 
     fontFamily: {
       altivo: ['altivo', 'sans-serif'],
       bai: ['bai-jamjuree', 'sans-serif'],
     },
 
-   extend: {
-     
-      colors: {
-      'primary': '#7B9645',
-      'secondary': '#53514D',
-      'light': '#fff',
-      'dark': '#201818',
-    },
-    },
+    extend: {
 
-    plugins: [],
+      colors: {
+        'primary': '#7B9645',
+        'secondary': '#53514D',
+        'light': '#fff',
+        'dark': '#201818',
+      },
+     
+
+      fontSize: {
+        '3xl-md': '32px',
+        '3xl-2xl': '56px',
+        '2xl-2xl': '32px',
+
+      },
+
+      plugins: [],
+    }
   }
 }

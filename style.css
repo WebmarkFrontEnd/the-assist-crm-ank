@@ -560,12 +560,6 @@ video {
   margin-left: auto;
 }
 
-@media (min-width: 90%) {
-  .container {
-    max-width: 90%;
-  }
-}
-
 @media (min-width: 302px) {
   .container {
     max-width: 302px;
@@ -581,12 +575,6 @@ video {
 @media (min-width: 608px) {
   .container {
     max-width: 608px;
-  }
-}
-
-@media (min-width: 1396px) {
-  .container {
-    max-width: 1396px;
   }
 }
 
@@ -748,6 +736,16 @@ h4 {
   background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
+.bg-gradient-to-t {
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.from-secondary {
+  --tw-gradient-from: #53514D var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(83 81 77 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -784,10 +782,6 @@ h4 {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-\[32px\] {
-  font-size: 32px;
 }
 
 .text-base {
@@ -835,59 +829,58 @@ h4 {
   outline-style: solid;
 }
 
-/* Small Device Typography (sm) */
+/* Small Device Typography (md) */
 
-/* @screen sm{
-h1,h2,h3 {
-  @apply text-[32px]; 
-}
-} */
-
-/* 2XL Device Typography */
-
-/* @screen 2xl {
-  h1, h2 {
-    @apply text-3xl;
-  }
-
-  h3 {
-    @apply text-2xl;
-  }
-
-  h4 {
-    @apply text-2xl;
-  }
-} */
-
-/* Medium Device Typography */
-
-@media (min-width:481px) {
-  h1,h2,h3{
+@media (min-width: 768px) and (max-width: 979px){
+  h1,h2 {
     font-size: 32px;
   }
 }
 
 /* Laptop Device Typography */
 
-@media (min-width:1181px)  {
-  h1,h2{
-    font-size:56px;
+@media (min-width: 1181px) and (max-width: 1399px) {
+  h1,h2 {
+    font-size: 56px;
   }
 
-  h3{
-    font-size:32px;
+  h3 {
+    font-size: 32px;
+  }
+}
+
+/* Desktop Device Typography */
+
+@media (min-width: 1400px) {
+  h1,h2 {
+    font-size: 56px;
   }
 
-  h4{
-    font-size:24px;
+  h3 {
+    font-size: 32px;
+  }
+}
+
+/* Container */
+
+@media (min-width:981px) {
+  .container{
+    max-width:90%;
+  }
+}
+
+@media (min-width:1400px) {
+  .container{
+    max-width:1396px;
   }
 }
 
 /* Home Header */
 
 #home-header{
-  background: url('./img/home/home-header.jpg');
+  /* background: linear-gradient(180deg, var(--secondary-color) 0.64%, var(--secondary-color) 0.64%), url('./img/home/home-header-mobile.jpg'); */
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 

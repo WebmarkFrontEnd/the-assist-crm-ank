@@ -34,58 +34,54 @@
   }
 }
 
-/* Small Device Typography (sm) */
-/* @screen sm{
-h1,h2,h3 {
-  @apply text-[32px]; 
+/* Small Device Typography (md) */
+@screen md{
+h1,h2{
+  @apply text-3xl-md; 
 }
-} */
-
-/* 2XL Device Typography */
-/* @screen 2xl {
-  h1, h2 {
-    @apply text-3xl;
-  }
-
-  h3 {
-    @apply text-2xl;
-  }
-
-  h4 {
-    @apply text-2xl;
-  }
-} */
- 
-
-/* Medium Device Typography */
-
-@media (min-width:481px) {
-h1,h2,h3{
-  font-size: 32px;
-  }
 }
 
 /* Laptop Device Typography */
-
-@media (min-width:1181px)  {
-h1,h2{
-  font-size:56px;
+@screen 2xl {
+  h1,h2{
+    @apply text-3xl-2xl;
   }
 
-h3{
-font-size:32px;
+  h3 {
+    @apply text-2xl-2xl;
+  }
 }
 
-h4{
-font-size:24px;
+/* Desktop Device Typography */
+@screen 3xl {
+  h1,h2{
+    @apply text-3xl-2xl;
+  }
+
+  h3 {
+    @apply text-2xl-2xl;
+  }
+}
+
+/* Container */
+
+@media (min-width:981px) {
+.container{
+max-width:90%;
 }
 }
 
-
+@media (min-width:1400px) {
+.container{
+max-width:1396px;
+}
+}
 
 /* Home Header */
+
 #home-header{
- background: url('./img/home/home-header.jpg');
+ /* background: linear-gradient(180deg, var(--secondary-color) 0.64%, var(--secondary-color) 0.64%), url('./img/home/home-header-mobile.jpg'); */
  background-size: cover;
+ background-position: center;
  background-repeat: no-repeat;
 }
