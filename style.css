@@ -1121,6 +1121,11 @@ h4 {
   }
 }
 
+/**/
+
+.navbar{
+}
+
 .hover\:border-secondary:hover {
   --tw-border-opacity: 1;
   border-color: rgb(83 81 77 / var(--tw-border-opacity));
