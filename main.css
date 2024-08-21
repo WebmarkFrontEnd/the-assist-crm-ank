@@ -224,6 +224,7 @@ max-width:1396px;
 #home-header .btn-wrapper .col:last-child{
   position: absolute;
   bottom: -80px;
+  left: 8%;
 }
 
 #home-header .btn-wrapper .btn-dark{
