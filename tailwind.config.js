@@ -5,12 +5,12 @@ module.exports = {
 
     screens: {
       'xs': { 'max': '480px' },
-      'sm': { 'min': '481px', 'max': '767px' },
-      'md': { 'min': '768px', 'max': '979px' },
-      'lg': { 'min': '980px', 'max': '1024px' },
-      'xl': { 'min': '1025px', 'max': '1180px' },
-      '2xl': { 'min': '1181px', 'max': '1399px' },
-      '3xl': { 'min': '1400px' },
+      'sm': { 'min': '481px'},
+      'md': { 'min': '768px'},
+      'lg': { 'min': '980px'},
+      'xl': { 'min': '1025px'},
+      '2xl': { 'min': '1181px' },
+      '3xl': { 'min': '1440px' },
     },
 
       container: {
