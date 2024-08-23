@@ -751,8 +751,8 @@ h4 {
   top: -100%;
 }
 
-.top-\[9\%\] {
-  top: 9%;
+.top-\[13\%\] {
+  top: 13%;
 }
 
 .z-10 {
@@ -966,8 +966,8 @@ h4 {
   max-height: 16rem;
 }
 
-.min-h-\[60vh\] {
-  min-height: 60vh;
+.min-h-\[40vh\] {
+  min-height: 40vh;
 }
 
 .min-h-fit {
@@ -1001,10 +1001,6 @@ h4 {
 
 .w-8 {
   width: 2rem;
-}
-
-.w-\[92\%\] {
-  width: 92%;
 }
 
 .w-auto {
@@ -1152,6 +1148,10 @@ h4 {
   justify-content: space-between;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -1283,11 +1283,6 @@ h4 {
 
 .border-b-transparent {
   border-bottom-color: transparent;
-}
-
-.bg-\[\#a6c1ee\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(166 193 238 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -1941,15 +1936,35 @@ h4 {
   padding: 80px 0;
 }
 
-@media (max-width:1025px) {
+@media (min-width:1025px) {
   .section{
     padding: 100px 0;
   }
 }
 
-@media (max-width:1400px) {
+@media (min-width:1400px) {
   .section{
-    padding: 12 0px 0;
+    padding: 120px 0;
+  }
+}
+
+/******* Navbar Style *******/
+
+.top-bar p{
+  font-size: 6px;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.navbar,
+.navbar .nav-links{
+  z-index: 9999;
+}
+
+@media(min-width:481px){
+  .top-bar p{
+    font-size: 6px;
+    text-align: end;
   }
 }
 
@@ -2112,11 +2127,6 @@ h4 {
   border-color: rgb(83 81 77 / var(--tw-border-opacity));
 }
 
-.hover\:bg-\[\#87acec\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(135 172 236 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-gray-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
@@ -2250,21 +2260,12 @@ h4 {
 }
 
 @media (min-width: 980px) {
-  .lg\:static {
-    position: static;
-  }
-
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
   }
 
   .lg\:hidden {
     display: none;
-  }
-
-  .lg\:min-h-fit {
-    min-height: -moz-fit-content;
-    min-height: fit-content;
   }
 
   .lg\:w-auto {
@@ -2278,66 +2279,23 @@ h4 {
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-
-  .lg\:flex-row {
-    flex-direction: row;
-  }
 }
 
 @media (min-width: 1025px) {
-  .xl\:static {
-    position: static;
-  }
-
   .xl\:hidden {
     display: none;
-  }
-
-  .xl\:min-h-fit {
-    min-height: -moz-fit-content;
-    min-height: fit-content;
-  }
-
-  .xl\:flex-row {
-    flex-direction: row;
   }
 }
 
 @media (min-width: 1181px) {
-  .\32xl\:static {
-    position: static;
-  }
-
   .\32xl\:hidden {
     display: none;
-  }
-
-  .\32xl\:min-h-fit {
-    min-height: -moz-fit-content;
-    min-height: fit-content;
-  }
-
-  .\32xl\:flex-row {
-    flex-direction: row;
   }
 }
 
 @media (min-width: 1440px) {
-  .\33xl\:static {
-    position: static;
-  }
-
   .\33xl\:hidden {
     display: none;
-  }
-
-  .\33xl\:min-h-fit {
-    min-height: -moz-fit-content;
-    min-height: fit-content;
-  }
-
-  .\33xl\:flex-row {
-    flex-direction: row;
   }
 
   .\33xl\:justify-center {
