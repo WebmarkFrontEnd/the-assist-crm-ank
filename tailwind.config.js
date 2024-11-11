@@ -36,7 +36,7 @@ module.exports = {
       colors: {
         'primary': '#262A3B',
         'secondary': '#424242',
-        'light-grey': '#F4F2F0',
+        'muddy-grey': '#F4F2F0',
         'light': '#fff',
         'dark': '#272727',
         'btn-primary-bg': '#A190CC',
