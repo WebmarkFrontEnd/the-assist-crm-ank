@@ -28,7 +28,8 @@ module.exports = {
      
 
     fontFamily: {
-      poppins: ['Poppins', 'sans-serif'],
+      popp: ['Poppins', 'sans-serif'],
+      osw: ['Oswald', 'sans-serif'],
     },
 
     extend: {
@@ -36,10 +37,10 @@ module.exports = {
       colors: {
         'primary': '#262A3B',
         'secondary': '#424242',
-        'muddy-grey': '#F4F2F0',
+        'light-grey': '#F4F2F0',
         'light': '#fff',
         'dark': '#272727',
-        'btn-primary-bg': '#A190CC',
+        'btn-primary': '#A190CC',
         'btn-secondary-bg':'#D6CF1F',
       },
      

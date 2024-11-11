@@ -5,8 +5,8 @@
 
 @layer components{
   .btn{
-      @apply px-[20px] py-[10px] text-base 
-      poppins border-2 border-primary inline-block bg-primary text-light rounded-full uppercase hover:bg-secondary hover:border-secondary ;
+      @apply px-[20px] py-[15px] text-lg 
+      font-osw border-2 border-light inline-block bg-btn-primary text-light rounded-full uppercase hover:text-dark hover:bg-transparent hover:border-dark tracking-[1.08px];
   }
 
   .btn-light{
@@ -19,14 +19,18 @@
 
 
   h1,h2,h3,h4,h5,h6{
-    @apply font-poppins text-secondary font-light uppercase;
+    @apply font-popp text-primary font-semibold;
   }
 
   p{
-    @apply text-base font-poppins text-secondary font-normal leading-5;
+    @apply text-base font-popp text-primary font-normal leading-5;
   }
 
-  h1,h2,h3{
+  h1{
+    @apply text-4xl;
+  }
+
+  h2,h3{
     @apply text-2xl;
   }
 
