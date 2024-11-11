@@ -4,41 +4,43 @@ module.exports = {
   theme: {
 
     screens: {
-      'xs': { 'max': '480px' },
-      'sm': { 'min': '481px'},
-      'md': { 'min': '768px'},
-      'lg': { 'min': '980px'},
-      'xl': { 'min': '1025px'},
-      '2xl': { 'min': '1181px' },
-      '3xl': { 'min': '1440px' },
+      // 'xs': { 'max': '480px' },
+      // 'sm': { 'min': '481px'},
+      // 'md': { 'min': '768px'},
+      // 'lg': { 'min': '980px'},
+      // 'xl': { 'min': '1025px'},
+      // '2xl': { 'min': '1181px' },
+      // '3xl': { 'min': '1440px' },
     },
 
       container: {
       center: true,
       screens: {
-        xs: '302px',
-        sm: '462px',
-        md: '608px',
-        // lg: '90%',
-        // xl: '90%',
-        // '2xl': '90%',
-        // '3xl': '1396px',
+        // xs: '302px',
+        // sm: '462px',
+        // md: '608px',
+        // // lg: '90%',
+        // // xl: '90%',
+        // // '2xl': '90%',
+        // // '3xl': '1396px',
       },
       },     
      
 
     fontFamily: {
-      altivo: ['altivo', 'sans-serif'],
-      bai: ['bai-jamjuree', 'sans-serif'],
+      poppins: ['Poppins', 'sans-serif'],
     },
 
     extend: {
 
       colors: {
-        'primary': '#7B9645',
-        'secondary': '#53514D',
+        'primary': '#262A3B',
+        'secondary': '#424242',
+        'light-grey': '#F4F2F0',
         'light': '#fff',
-        'dark': '#201818',
+        'dark': '#272727',
+        'btn-primary-bg': '#A190CC',
+        'btn-secondary-bg':'#D6CF1F',
       },
      
 

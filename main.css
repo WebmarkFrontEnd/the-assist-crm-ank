@@ -5,7 +5,8 @@
 
 @layer components{
   .btn{
-      @apply px-[20px] py-[10px] text-base font-altivo border-2 border-primary inline-block bg-primary text-light rounded-full uppercase hover:bg-secondary hover:border-secondary ;
+      @apply px-[20px] py-[10px] text-base 
+      poppins border-2 border-primary inline-block bg-primary text-light rounded-full uppercase hover:bg-secondary hover:border-secondary ;
   }
 
   .btn-light{
@@ -18,11 +19,11 @@
 
 
   h1,h2,h3,h4,h5,h6{
-    @apply font-altivo text-secondary font-light uppercase;
+    @apply font-poppins text-secondary font-light uppercase;
   }
 
   p{
-    @apply text-base font-bai text-secondary font-normal leading-5;
+    @apply text-base font-poppins text-secondary font-normal leading-5;
   }
 
   h1,h2,h3{
@@ -36,15 +37,15 @@
 
 /* Small Device Typography */
 
-@screen sm{
+/* @screen sm{
   .btn{
       @apply py-[12px] text-lg;
   }
-}
+} */
 
 /* Ipad Device Typography */
 
-@screen md{
+/* @screen md{
 h1,h2{
   @apply text-3xl-md; 
 }
@@ -52,11 +53,11 @@ h1,h2{
 .btn{
       @apply py-[12px] text-lg;
   }
-}
+} */
 
 /* Large Device Typography */
 
-@screen xl{
+/* @screen xl{
   p{
     @apply text-lg;
   }
@@ -68,11 +69,11 @@ h1,h2{
   .btn{
       @apply py-[16px] text-lg;
   }
-}
+} */
 
 /* Laptop Device Typography */
 
-@screen 2xl {
+/* @screen 2xl {
   h1,h2{
     @apply text-3xl-2xl;
   }
@@ -83,10 +84,10 @@ h1,h2{
   .btn{
       @apply py-[16px] text-lg;
   }
-}
+} */
 
 /* Desktop Device Typography */
-
+/* 
 @screen 3xl {
   h1,h2{
     @apply text-3xl-2xl;
@@ -102,7 +103,7 @@ h1,h2{
   .btn{
       @apply py-[16px] text-lg;
   }
-}
+} */
 
 
 
