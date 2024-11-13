@@ -579,6 +579,9 @@ video {
   letter-spacing: 1.08px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-shadow: 0px 10px 0px 0px #A190CC;
+  --tw-shadow-colored: 0px 10px 0px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .btn:hover {
@@ -587,6 +590,9 @@ video {
   background-color: transparent;
   --tw-text-opacity: 1;
   color: rgb(39 39 39 / var(--tw-text-opacity));
+  --tw-shadow: 0px 10px 0px 0px #262a3b;
+  --tw-shadow-colored: 0px 10px 0px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .btn-light {
@@ -710,12 +716,12 @@ h4 {
   z-index: 50;
 }
 
-.col-span-full {
-  grid-column: 1 / -1;
-}
-
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+
+.col-span-full {
+  grid-column: 1 / -1;
 }
 
 .m-auto {
@@ -788,6 +794,10 @@ h4 {
   margin-left: 1rem;
 }
 
+.ml-64 {
+  margin-left: 16rem;
+}
+
 .ml-auto {
   margin-left: auto;
 }
@@ -818,10 +828,6 @@ h4 {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.ml-64 {
-  margin-left: 16rem;
 }
 
 .block {
@@ -1373,6 +1379,11 @@ h4 {
   padding-bottom: 8rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-\[12px\] {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -1619,8 +1630,8 @@ h4 {
 }
 
 .shadow-md {
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  --tw-shadow: 0px 10px 0px 0px #A190CC;
+  --tw-shadow-colored: 0px 10px 0px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -2009,6 +2020,12 @@ h1,h2{
 .hover\:text-light:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:shadow-xl:hover {
+  --tw-shadow: 0px 10px 0px 0px #262a3b;
+  --tw-shadow-colored: 0px 10px 0px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .focus\:border-blue-500:focus {

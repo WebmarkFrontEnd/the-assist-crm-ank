@@ -34,6 +34,11 @@ module.exports = {
 
     extend: {
 
+      boxShadow: {
+        'md': '0px 10px 0px 0px #A190CC',
+        'xl': '0px 10px 0px 0px #262a3b',
+      },
+
       colors: {
         'primary': '#262A3B',
         'secondary': '#424242',
