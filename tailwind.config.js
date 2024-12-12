@@ -1,19 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["*"],
+  content: ['*'],
   theme: {
-
     screens: {
-      'xs': { 'max': '480px' },
-      'sm': { 'min': '481px'},
-      'md': { 'min': '768px'},
-      'lg': { 'min': '980px'},
-      'xl': { 'min': '1025px'},
-      '2xl': { 'min': '1181px' },
-      '3xl': { 'min': '1440px' },
+      xs: { max: '480px' },
+      sm: { min: '481px' },
+      md: { min: '768px' },
+      lg: { min: '980px' },
+      xl: { min: '1025px' },
+      '2xl': { min: '1181px' },
+      '3xl': { min: '1440px' },
     },
 
-      container: {
+    container: {
       center: true,
       screens: {
         // xs: '302px',
@@ -24,8 +23,7 @@ module.exports = {
         // // '2xl': '90%',
         // // '3xl': '1396px',
       },
-      },     
-     
+    },
 
     fontFamily: {
       popp: ['Poppins', 'sans-serif'],
@@ -33,35 +31,32 @@ module.exports = {
     },
 
     extend: {
-
       boxShadow: {
-        'md': '0px 10px 0px 0px #A190CC',
-        'xl': '0px 10px 0px 0px #262a3b',
+        md: '0px 10px 0px 0px #A190CC',
+        xl: '0px 10px 0px 0px #262a3b',
       },
 
       colors: {
-        'primary': '#262A3B',
-        'secondary': '#424242',
+        primary: '#262A3B',
+        secondary: '#424242',
         'light-grey': '#F4F2F0',
-        'light': '#fff',
-        'dark': '#272727',
+        light: '#fff',
+        dark: '#272727',
         'btn-primary': '#A190CC',
-        'btn-secondary-bg':'#D6CF1F',
+        'btn-secondary-bg': '#D6CF1F',
       },
-     
 
       fontSize: {
         '3xl-md': '32px',
         '3xl-2xl': '56px',
         '2xl-2xl': '32px',
-
       },
 
-       lineHeight: {
-        '6': '1.33em',
+      lineHeight: {
+        6: '1.33em',
       },
 
       plugins: [],
-    }
-  }
-}
+    },
+  },
+};

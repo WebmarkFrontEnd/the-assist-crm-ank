@@ -11,15 +11,21 @@
 
 <body class="text-gray-800 font-inter">
 
-  <!-- start: Sidebar -->
-  <div class="fixed left-0 top-0 w-64 h-full bg-gray-900 py-4 z-50 sidebar-menu transition-transform">
-    <a href="#" class="flex items-center justify-center mb-4 border-b border-b-gray-800">
+</body>
+
+<!-- Dashboard Page-->
+<div class="flex w-screen h-screen">
+
+  <!-- Component Start -->
+  <div class="flex flex-col left-0 top-0 w-60 h-full bg-[#262A3B] py-4 z-50 sidebar-menu transition-transform">
+    <a href="#" class="flex items-center justify-center mb-4 border-b-[1px] border-[#3C3F4F]">
       <img src="./img/leads-logo.png" alt="">
       <!-- <span class="text-lg font-bold text-white ml-3">Logo</span> -->
     </a>
-    <div class="px-8">
-      <h4 class="text-sm text-light opacity-40 uppercase font-osw tracking-tight">Main Menu</h4>
+    <div class="px-4 h-full">
+      <h4 class="text-sm text-light opacity-40 uppercase font-osw tracking-tight px-4">Main Menu</h4>
       <ul class="mt-4 *:mb-1">
+
         <li class="active">
           <a href="#">
             <img src="./img/dashboard.png" alt="dashboard">
@@ -68,7 +74,7 @@
           </a>
         </li>
       </ul>
-      <ul class="mt-4 *:mb-1">
+      <ul class="mt-5 pt-5 *:mb-1 border-t-[1px] border-[#3C3F4F]">
         <li>
           <a href="#">
             <img src="./img/ambassador.png" alt="ambassador">
@@ -110,1286 +116,238 @@
 
       </ul>
     </div>
+
+    <div class="px-4">
+      <ul class="mt-4 *:mb-1">
+        <li>
+          <a href="#">
+            <img src="./img/logout.png" alt="logout">
+            <span>Logout</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="fixed top-0 left-0 w-full h-full bg-black/50 z-40 md:hidden sidebar-overlay"></div>
-  <!-- end: Sidebar -->
-
-  <!-- start: Main -->
-  <main class="w-full md:w-[calc(100%-256px)] md:ml-64 bg-gray-50 min-h-screen transition-all main">
-    <div class="py-2 px-6 bg-white flex items-center shadow-md shadow-black/5 sticky top-0 left-0 z-30">
-      <button type="button" class="text-lg text-gray-600 sidebar-toggle">
-        <i class="ri-menu-line"></i>
+  <div class="flex flex-col w-4/6 flex-grow">
+    <div class="flex items-center justify-between flex-shrink-0 p-4">
+      <button class="btn flex items-center gap-3 py-2.5 px-8">Search
+        MLS or Contacts
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+        </svg>
       </button>
-      <ul class="flex items-center text-sm ml-4">
-        <li class="mr-2">
-          <a href="#" class="text-gray-400 hover:text-gray-600 font-medium">Dashboard</a>
-        </li>
-        <li class="text-gray-600 mr-2 font-medium">/</li>
-        <li class="text-gray-600 mr-2 font-medium">Analytics</li>
-      </ul>
-      <ul class="ml-auto flex items-center">
-        <li class="mr-1 dropdown">
-          <button type="button"
-            class="dropdown-toggle text-gray-400 w-8 h-8 rounded flex items-center justify-center hover:bg-gray-50 hover:text-gray-600">
-            <i class="ri-search-line"></i>
-          </button>
-          <div
-            class="dropdown-menu shadow-md shadow-black/5 z-30 hidden max-w-xs w-full bg-white rounded-md border border-gray-100">
-            <form action="" class="p-4 border-b border-b-gray-100">
-              <div class="relative w-full">
-                <input type="text"
-                  class="py-2 pr-4 pl-10 bg-gray-50 w-full outline-none border border-gray-100 rounded-md text-sm focus:border-blue-500"
-                  placeholder="Search...">
-                <i class="ri-search-line absolute top-1/2 left-4 -translate-y-1/2 text-gray-400"></i>
-              </div>
-            </form>
-            <div class="mt-3 mb-2">
-              <div class="text-[13px] font-medium text-gray-400 ml-4 mb-2">Recently</div>
-              <ul class="max-h-64 overflow-y-auto">
-                <li>
-                  <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                    <img src="https://placehold.co/32x32" alt=""
-                      class="w-8 h-8 rounded block object-cover align-middle">
-                    <div class="ml-2">
-                      <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">Create
-                        landing page</div>
-                      <div class="text-[11px] text-gray-400">$345</div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                    <img src="https://placehold.co/32x32" alt=""
-                      class="w-8 h-8 rounded block object-cover align-middle">
-                    <div class="ml-2">
-                      <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">Create
-                        landing page</div>
-                      <div class="text-[11px] text-gray-400">$345</div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                    <img src="https://placehold.co/32x32" alt=""
-                      class="w-8 h-8 rounded block object-cover align-middle">
-                    <div class="ml-2">
-                      <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">Create
-                        landing page</div>
-                      <div class="text-[11px] text-gray-400">$345</div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                    <img src="https://placehold.co/32x32" alt=""
-                      class="w-8 h-8 rounded block object-cover align-middle">
-                    <div class="ml-2">
-                      <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">Create
-                        landing page</div>
-                      <div class="text-[11px] text-gray-400">$345</div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                    <img src="https://placehold.co/32x32" alt=""
-                      class="w-8 h-8 rounded block object-cover align-middle">
-                    <div class="ml-2">
-                      <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">Create
-                        landing page</div>
-                      <div class="text-[11px] text-gray-400">$345</div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                    <img src="https://placehold.co/32x32" alt=""
-                      class="w-8 h-8 rounded block object-cover align-middle">
-                    <div class="ml-2">
-                      <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">Create
-                        landing page</div>
-                      <div class="text-[11px] text-gray-400">$345</div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                    <img src="https://placehold.co/32x32" alt=""
-                      class="w-8 h-8 rounded block object-cover align-middle">
-                    <div class="ml-2">
-                      <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">Create
-                        landing page</div>
-                      <div class="text-[11px] text-gray-400">$345</div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                    <img src="https://placehold.co/32x32" alt=""
-                      class="w-8 h-8 rounded block object-cover align-middle">
-                    <div class="ml-2">
-                      <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">Create
-                        landing page</div>
-                      <div class="text-[11px] text-gray-400">$345</div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li class="dropdown">
-          <button type="button"
-            class="dropdown-toggle text-gray-400 w-8 h-8 rounded flex items-center justify-center hover:bg-gray-50 hover:text-gray-600">
-            <i class="ri-notification-3-line"></i>
-          </button>
-          <div
-            class="dropdown-menu shadow-md shadow-black/5 z-30 hidden max-w-xs w-full bg-white rounded-md border border-gray-100">
-            <div class="flex items-center px-4 pt-4 border-b border-b-gray-100 notification-tab">
-              <button type="button" data-tab="notification" data-tab-page="notifications"
-                class="text-gray-400 font-medium text-[13px] hover:text-gray-600 border-b-2 border-b-transparent mr-4 pb-1 active">Notifications</button>
-              <button type="button" data-tab="notification" data-tab-page="messages"
-                class="text-gray-400 font-medium text-[13px] hover:text-gray-600 border-b-2 border-b-transparent mr-4 pb-1">Messages</button>
-            </div>
-            <div class="my-2">
-              <ul class="max-h-64 overflow-y-auto" data-tab-for="notification" data-page="notifications">
-                <li>
-                  <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                    <img src="https://placehold.co/32x32" alt=""
-                      class="w-8 h-8 rounded block object-cover align-middle">
-                    <div class="ml-2">
-                      <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">New order
-                      </div>
-                      <div class="text-[11px] text-gray-400">from a user</div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                    <img src="https://placehold.co/32x32" alt=""
-                      class="w-8 h-8 rounded block object-cover align-middle">
-                    <div class="ml-2">
-                      <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">New order
-                      </div>
-                      <div class="text-[11px] text-gray-400">from a user</div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                    <img src="https://placehold.co/32x32" alt=""
-                      class="w-8 h-8 rounded block object-cover align-middle">
-                    <div class="ml-2">
-                      <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">New order
-                      </div>
-                      <div class="text-[11px] text-gray-400">from a user</div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                    <img src="https://placehold.co/32x32" alt=""
-                      class="w-8 h-8 rounded block object-cover align-middle">
-                    <div class="ml-2">
-                      <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">New order
-                      </div>
-                      <div class="text-[11px] text-gray-400">from a user</div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                    <img src="https://placehold.co/32x32" alt=""
-                      class="w-8 h-8 rounded block object-cover align-middle">
-                    <div class="ml-2">
-                      <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">New order
-                      </div>
-                      <div class="text-[11px] text-gray-400">from a user</div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-              <ul class="max-h-64 overflow-y-auto hidden" data-tab-for="notification" data-page="messages">
-                <li>
-                  <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                    <img src="https://placehold.co/32x32" alt=""
-                      class="w-8 h-8 rounded block object-cover align-middle">
-                    <div class="ml-2">
-                      <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">John Doe
-                      </div>
-                      <div class="text-[11px] text-gray-400">Hello there!</div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                    <img src="https://placehold.co/32x32" alt=""
-                      class="w-8 h-8 rounded block object-cover align-middle">
-                    <div class="ml-2">
-                      <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">John Doe
-                      </div>
-                      <div class="text-[11px] text-gray-400">Hello there!</div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                    <img src="https://placehold.co/32x32" alt=""
-                      class="w-8 h-8 rounded block object-cover align-middle">
-                    <div class="ml-2">
-                      <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">John Doe
-                      </div>
-                      <div class="text-[11px] text-gray-400">Hello there!</div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                    <img src="https://placehold.co/32x32" alt=""
-                      class="w-8 h-8 rounded block object-cover align-middle">
-                    <div class="ml-2">
-                      <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">John Doe
-                      </div>
-                      <div class="text-[11px] text-gray-400">Hello there!</div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                    <img src="https://placehold.co/32x32" alt=""
-                      class="w-8 h-8 rounded block object-cover align-middle">
-                    <div class="ml-2">
-                      <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">John Doe
-                      </div>
-                      <div class="text-[11px] text-gray-400">Hello there!</div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li class="dropdown ml-3">
-          <button type="button" class="dropdown-toggle flex items-center">
-            <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded block object-cover align-middle">
-          </button>
-          <ul
-            class="dropdown-menu shadow-md shadow-black/5 z-30 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
-            <li>
-              <a href="#"
-                class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Profile</a>
-            </li>
-            <li>
-              <a href="#"
-                class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Settings</a>
-            </li>
-            <li>
-              <a href="#"
-                class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Logout</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="p-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
-        <div class="bg-white rounded-md border border-gray-100 p-6 shadow-md shadow-black/5">
-          <div class="flex justify-between mb-6">
-            <div>
-              <div class="text-2xl font-semibold mb-1">10</div>
-              <div class="text-sm font-medium text-gray-400">Active orders</div>
-            </div>
-            <div class="dropdown">
-              <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600"><i
-                  class="ri-more-fill"></i></button>
-              <ul
-                class="dropdown-menu shadow-md shadow-black/5 z-30 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
-                <li>
-                  <a href="#"
-                    class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Profile</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Settings</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Logout</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="flex items-center">
-            <div class="w-full bg-gray-100 rounded-full h-4">
-              <div class="h-full bg-blue-500 rounded-full p-1" style="width: 60%;">
-                <div class="w-2 h-2 rounded-full bg-white ml-auto"></div>
-              </div>
-            </div>
-            <span class="text-sm font-medium text-gray-600 ml-4">60%</span>
-          </div>
-        </div>
-        <div class="bg-white rounded-md border border-gray-100 p-6 shadow-md shadow-black/5">
-          <div class="flex justify-between mb-4">
-            <div>
-              <div class="flex items-center mb-1">
-                <div class="text-2xl font-semibold">324</div>
-                <div class="p-1 rounded bg-emerald-500/10 text-emerald-500 text-[12px] font-semibold leading-none ml-2">
-                  +30%</div>
-              </div>
-              <div class="text-sm font-medium text-gray-400">Visitors</div>
-            </div>
-            <div class="dropdown">
-              <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600"><i
-                  class="ri-more-fill"></i></button>
-              <ul
-                class="dropdown-menu shadow-md shadow-black/5 z-30 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
-                <li>
-                  <a href="#"
-                    class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Profile</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Settings</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Logout</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="flex items-center">
-            <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded-full object-cover block">
-            <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded-full object-cover block -ml-3">
-            <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded-full object-cover block -ml-3">
-            <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded-full object-cover block -ml-3">
-            <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded-full object-cover block -ml-3">
-          </div>
-        </div>
-        <div class="bg-white rounded-md border border-gray-100 p-6 shadow-md shadow-black/5">
-          <div class="flex justify-between mb-6">
-            <div>
-              <div class="text-2xl font-semibold mb-1"><span
-                  class="text-base font-normal text-gray-400 align-top">&dollar;</span>2,345</div>
-              <div class="text-sm font-medium text-gray-400">Active orders</div>
-            </div>
-            <div class="dropdown">
-              <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600"><i
-                  class="ri-more-fill"></i></button>
-              <ul
-                class="dropdown-menu shadow-md shadow-black/5 z-30 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
-                <li>
-                  <a href="#"
-                    class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Profile</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Settings</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Logout</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <a href="#" class="text-blue-500 font-medium text-sm hover:text-blue-600">View details</a>
-        </div>
-      </div>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-        <div class="bg-white border border-gray-100 shadow-md shadow-black/5 p-6 rounded-md">
-          <div class="flex justify-between mb-4 items-start">
-            <div class="font-medium">Manage orders</div>
-            <div class="dropdown">
-              <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600"><i
-                  class="ri-more-fill"></i></button>
-              <ul
-                class="dropdown-menu shadow-md shadow-black/5 z-30 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
-                <li>
-                  <a href="#"
-                    class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Profile</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Settings</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Logout</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="flex items-center mb-4 order-tab">
-            <button type="button" data-tab="order" data-tab-page="active"
-              class="bg-gray-50 text-sm font-medium text-gray-400 py-2 px-4 rounded-tl-md rounded-bl-md hover:text-gray-600 active">Active</button>
-            <button type="button" data-tab="order" data-tab-page="completed"
-              class="bg-gray-50 text-sm font-medium text-gray-400 py-2 px-4 hover:text-gray-600">Completed</button>
-            <button type="button" data-tab="order" data-tab-page="canceled"
-              class="bg-gray-50 text-sm font-medium text-gray-400 py-2 px-4 rounded-tr-md rounded-br-md hover:text-gray-600">Canceled</button>
-          </div>
-          <div class="overflow-x-auto">
-            <table class="w-full min-w-[540px]" data-tab-for="order" data-page="active">
-              <thead>
-                <tr>
-                  <th
-                    class="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left rounded-tl-md rounded-bl-md">
-                    Service</th>
-                  <th
-                    class="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left">
-                    Estimate</th>
-                  <th
-                    class="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left">
-                    Budget</th>
-                  <th
-                    class="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left rounded-tr-md rounded-br-md">
-                    Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">3 days</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">$56</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">In
-                      progress</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">3 days</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">$56</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">In
-                      progress</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">3 days</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">$56</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">In
-                      progress</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">3 days</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">$56</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">In
-                      progress</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">3 days</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">$56</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">In
-                      progress</span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <table class="w-full min-w-[540px] hidden" data-tab-for="order" data-page="completed">
-              <thead>
-                <tr>
-                  <th
-                    class="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left rounded-tl-md rounded-bl-md">
-                    Service</th>
-                  <th
-                    class="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left">
-                    Estimate</th>
-                  <th
-                    class="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left">
-                    Budget</th>
-                  <th
-                    class="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left rounded-tr-md rounded-br-md">
-                    Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">3 days</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">$56</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">Completed</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">3 days</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">$56</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">Completed</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">3 days</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">$56</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">Completed</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">3 days</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">$56</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">Completed</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">3 days</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">$56</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">Completed</span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <table class="w-full min-w-[540px] hidden" data-tab-for="order" data-page="canceled">
-              <thead>
-                <tr>
-                  <th
-                    class="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left rounded-tl-md rounded-bl-md">
-                    Service</th>
-                  <th
-                    class="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left">
-                    Estimate</th>
-                  <th
-                    class="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left">
-                    Budget</th>
-                  <th
-                    class="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left rounded-tr-md rounded-br-md">
-                    Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">3 days</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">$56</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-rose-500/10 text-rose-500 font-medium text-[12px] leading-none">Canceled</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">3 days</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">$56</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-rose-500/10 text-rose-500 font-medium text-[12px] leading-none">Canceled</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">3 days</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">$56</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-rose-500/10 text-rose-500 font-medium text-[12px] leading-none">Canceled</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">3 days</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">$56</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-rose-500/10 text-rose-500 font-medium text-[12px] leading-none">Canceled</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">3 days</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">$56</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-rose-500/10 text-rose-500 font-medium text-[12px] leading-none">Canceled</span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div class="bg-white border border-gray-100 shadow-md shadow-black/5 p-6 rounded-md">
-          <div class="flex justify-between mb-4 items-start">
-            <div class="font-medium">Manage Services</div>
-            <div class="dropdown">
-              <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600"><i
-                  class="ri-more-fill"></i></button>
-              <ul
-                class="dropdown-menu shadow-md shadow-black/5 z-30 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
-                <li>
-                  <a href="#"
-                    class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Profile</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Settings</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Logout</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <form action="" class="flex items-center mb-4">
-            <div class="relative w-full mr-2">
-              <input type="text"
-                class="py-2 pr-4 pl-10 bg-gray-50 w-full outline-none border border-gray-100 rounded-md text-sm focus:border-blue-500"
-                placeholder="Search...">
-              <i class="ri-search-line absolute top-1/2 left-4 -translate-y-1/2 text-gray-400"></i>
-            </div>
-            <select
-              class="text-sm py-2 pl-4 pr-10 bg-gray-50 border border-gray-100 rounded-md focus:border-blue-500 outline-none appearance-none bg-select-arrow bg-no-repeat bg-[length:16px_16px] bg-[right_16px_center]">
-              <option value="">All</option>
-            </select>
-          </form>
-          <div class="overflow-x-auto">
-            <table class="w-full min-w-[540px]">
-              <thead>
-                <tr>
-                  <th
-                    class="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left rounded-tl-md rounded-bl-md">
-                    Service</th>
-                  <th
-                    class="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left">
-                    Price</th>
-                  <th
-                    class="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left">
-                    Clicks</th>
-                  <th
-                    class="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left rounded-tr-md rounded-br-md">
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">$235</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">1K</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="dropdown">
-                      <button type="button"
-                        class="dropdown-toggle text-gray-400 hover:text-gray-600 text-sm w-6 h-6 rounded flex items-center justify-center bg-gray-50"><i
-                          class="ri-more-2-fill"></i></button>
-                      <ul
-                        class="dropdown-menu shadow-md shadow-black/5 z-30 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
-                        <li>
-                          <a href="#"
-                            class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Profile</a>
-                        </li>
-                        <li>
-                          <a href="#"
-                            class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Settings</a>
-                        </li>
-                        <li>
-                          <a href="#"
-                            class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Logout</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">$235</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">1K</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="dropdown">
-                      <button type="button"
-                        class="dropdown-toggle text-gray-400 hover:text-gray-600 text-sm w-6 h-6 rounded flex items-center justify-center bg-gray-50"><i
-                          class="ri-more-2-fill"></i></button>
-                      <ul
-                        class="dropdown-menu shadow-md shadow-black/5 z-30 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
-                        <li>
-                          <a href="#"
-                            class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Profile</a>
-                        </li>
-                        <li>
-                          <a href="#"
-                            class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Settings</a>
-                        </li>
-                        <li>
-                          <a href="#"
-                            class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Logout</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">$235</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">1K</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="dropdown">
-                      <button type="button"
-                        class="dropdown-toggle text-gray-400 hover:text-gray-600 text-sm w-6 h-6 rounded flex items-center justify-center bg-gray-50"><i
-                          class="ri-more-2-fill"></i></button>
-                      <ul
-                        class="dropdown-menu shadow-md shadow-black/5 z-30 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
-                        <li>
-                          <a href="#"
-                            class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Profile</a>
-                        </li>
-                        <li>
-                          <a href="#"
-                            class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Settings</a>
-                        </li>
-                        <li>
-                          <a href="#"
-                            class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Logout</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">$235</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">1K</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="dropdown">
-                      <button type="button"
-                        class="dropdown-toggle text-gray-400 hover:text-gray-600 text-sm w-6 h-6 rounded flex items-center justify-center bg-gray-50"><i
-                          class="ri-more-2-fill"></i></button>
-                      <ul
-                        class="dropdown-menu shadow-md shadow-black/5 z-30 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
-                        <li>
-                          <a href="#"
-                            class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Profile</a>
-                        </li>
-                        <li>
-                          <a href="#"
-                            class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Settings</a>
-                        </li>
-                        <li>
-                          <a href="#"
-                            class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Logout</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">$235</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-gray-400">1K</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="dropdown">
-                      <button type="button"
-                        class="dropdown-toggle text-gray-400 hover:text-gray-600 text-sm w-6 h-6 rounded flex items-center justify-center bg-gray-50"><i
-                          class="ri-more-2-fill"></i></button>
-                      <ul
-                        class="dropdown-menu shadow-md shadow-black/5 z-30 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
-                        <li>
-                          <a href="#"
-                            class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Profile</a>
-                        </li>
-                        <li>
-                          <a href="#"
-                            class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Settings</a>
-                        </li>
-                        <li>
-                          <a href="#"
-                            class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Logout</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
-        <div class="bg-white border border-gray-100 shadow-md shadow-black/5 p-6 rounded-md lg:col-span-2">
-          <div class="flex justify-between mb-4 items-start">
-            <div class="font-medium">Order Statistics</div>
-            <div class="dropdown">
-              <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600"><i
-                  class="ri-more-fill"></i></button>
-              <ul
-                class="dropdown-menu shadow-md shadow-black/5 z-30 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
-                <li>
-                  <a href="#"
-                    class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Profile</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Settings</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Logout</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
-            <div class="rounded-md border border-dashed border-gray-200 p-4">
-              <div class="flex items-center mb-0.5">
-                <div class="text-xl font-semibold">10</div>
-                <span
-                  class="p-1 rounded text-[12px] font-semibold bg-blue-500/10 text-blue-500 leading-none ml-1">$80</span>
-              </div>
-              <span class="text-gray-400 text-sm">Active</span>
-            </div>
-            <div class="rounded-md border border-dashed border-gray-200 p-4">
-              <div class="flex items-center mb-0.5">
-                <div class="text-xl font-semibold">50</div>
-                <span
-                  class="p-1 rounded text-[12px] font-semibold bg-emerald-500/10 text-emerald-500 leading-none ml-1">+$469</span>
-              </div>
-              <span class="text-gray-400 text-sm">Completed</span>
-            </div>
-            <div class="rounded-md border border-dashed border-gray-200 p-4">
-              <div class="flex items-center mb-0.5">
-                <div class="text-xl font-semibold">4</div>
-                <span
-                  class="p-1 rounded text-[12px] font-semibold bg-rose-500/10 text-rose-500 leading-none ml-1">-$130</span>
-              </div>
-              <span class="text-gray-400 text-sm">Canceled</span>
-            </div>
-          </div>
-          <div>
-            <canvas id="order-chart"></canvas>
-          </div>
-        </div>
-        <div class="bg-white border border-gray-100 shadow-md shadow-black/5 p-6 rounded-md">
-          <div class="flex justify-between mb-4 items-start">
-            <div class="font-medium">Earnings</div>
-            <div class="dropdown">
-              <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600"><i
-                  class="ri-more-fill"></i></button>
-              <ul
-                class="dropdown-menu shadow-md shadow-black/5 z-30 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
-                <li>
-                  <a href="#"
-                    class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Profile</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Settings</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Logout</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="overflow-x-auto">
-            <table class="w-full min-w-[460px]">
-              <thead>
-                <tr>
-                  <th
-                    class="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left rounded-tl-md rounded-bl-md">
-                    Service</th>
-                  <th
-                    class="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left">
-                    Earning</th>
-                  <th
-                    class="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left rounded-tr-md rounded-br-md">
-                    Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-emerald-500">+$235</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">Pending</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-rose-500">-$235</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-rose-500/10 text-rose-500 font-medium text-[12px] leading-none">Withdrawn</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-emerald-500">+$235</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">Pending</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-rose-500">-$235</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-rose-500/10 text-rose-500 font-medium text-[12px] leading-none">Withdrawn</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-emerald-500">+$235</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">Pending</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-rose-500">-$235</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-rose-500/10 text-rose-500 font-medium text-[12px] leading-none">Withdrawn</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-emerald-500">+$235</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">Pending</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-rose-500">-$235</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-rose-500/10 text-rose-500 font-medium text-[12px] leading-none">Withdrawn</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-emerald-500">+$235</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-medium text-[12px] leading-none">Pending</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <div class="flex items-center">
-                      <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover block">
-                      <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create
-                        landing page</a>
-                    </div>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span class="text-[13px] font-medium text-rose-500">-$235</span>
-                  </td>
-                  <td class="py-2 px-4 border-b border-b-gray-50">
-                    <span
-                      class="inline-block p-1 rounded bg-rose-500/10 text-rose-500 font-medium text-[12px] leading-none">Withdrawn</span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-  <!-- end: Main -->
+      <button class="btn btn-yellow flex items-center gap-3 px-8">Add Client/Alert
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg>
 
-  <script src="https://unpkg.com/@popperjs/core@2"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="./js/script.js"></script>
-</body>
+      </button>
+    </div>
+    <div class="flex-grow p-8 overflow-auto rounded-2xl bg-white border border-grey">
+
+      <div class="grid grid-cols-12 gap-8">
+        <div class="col-span-12 text-white bg-custom-gradient rounded-xl p-12 ">
+          <div class="flex gap-5 items-center ">
+
+            <!-- Logged Account-->
+            <div class="flex gap-4 w-2/3">
+              <!-- Logged Account Logo-->
+              <div class="relative" id="logged-account">
+                <img src="./assets/install_chatbot_dashboard/logged-site-logo.png" alt="logged-account">
+                <span class="absolute bottom-2.5 right-0">
+                  <path src="./assets/install_chatbot_dashboard/check-green-icon.svg" alt="">
+                </span>
+              </div>
+
+              <!-- Logged Account Content-->
+              <div class="w-2/3">
+                <h2 class="text-[22px] font-medium text-white mb-2">Your chatbot is now ready!</h2>
+                <p class="text-base text-lightblue">Your chatbot is now published and ready to be shared with the
+                  world!
+                  Copy this link to share your chatbot on social media, messaging apps or via email.</p>
+              </div>
+            </div>
+
+            <!-- Buttons-->
+            <div class="flex gap-5">
+
+              <a href="#"
+                class="flex items-center leading-none text-base font-medium bg-primary text-white rounded-lg py-4 px-5 transition-all hover:bg-white hover:text-dark">Try
+                Demo
+                <!-- <img class="w-4 h-4" src="./assets/install_chatbot_dashboard/external-link-icon.svg"
+                      alt="external link"> -->
+              </a>
+              <a href="#"
+                class="flex items-center leading-none text-base font-medium bg-secondary text-white rounded-lg py-3 px-5 transition-all hover:bg-white hover:text-dark">Install
+                Chatbot
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class=" grid grid-cols-5 col-span-12 gap-5">
+          <!-- 5 columns-->
+          <div class="flex justify-between p-5 bg-white rounded-lg border border-grey relative">
+
+            <div class="flex flex-col text-left">
+              <h4 class="text-[32px] leading-[1.2em] font-medium text-dark mb-1">0%</h4>
+              <p class="text-base opacity-90">Resolution rate</p>
+            </div>
+
+            <div class="help-widget">
+              <span>
+                <img class="bg-lightblue rounded-full cursor-pointer"
+                  src="./assets/install_chatbot_dashboard/help-widget-icon.svg" alt="help-widget">
+              </span>
+
+              <!-- <span class="text-dark bg-grey rounded p-3 w-full absolute -top-20 right-0">
+                    <p class="text-xs">Est eu venenatis ut vestibulum a feugiat condimentum fermentum
+                      faucibus nam a
+                      quisque lacinia.</p>
+                  </span> -->
+
+            </div>
+
+          </div>
+
+          <div class="flex justify-between p-5 bg-white rounded-lg border border-grey relative">
+
+            <div class="flex flex-col text-left">
+              <h4 class="text-[32px] leading-[1.2em] font-medium text-dark mb-1">0%</h4>
+              <p class="text-base opacity-90">Resolution rate</p>
+            </div>
+
+            <div class="help-widget">
+              <span>
+                <img class="bg-lightblue rounded-full cursor-pointer"
+                  src="./assets/install_chatbot_dashboard/help-widget-icon.svg" alt="help-widget">
+              </span>
+
+              <span class="hidden text-dark bg-grey rounded p-3 w-full absolute -top-20 right-0">
+                <p class="text-xs">Est eu venenatis ut vestibulum a feugiat condimentum fermentum
+                  faucibus nam a
+                  quisque lacinia.</p>
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="flex justify-between p-5 bg-white rounded-lg border border-grey relative">
+            <div class="flex flex-col text-left">
+              <h4 class="text-[32px] leading-[1.2em] font-medium text-dark mb-1">0min</h4>
+              <p class="text-base opacity-90">Time saved</p>
+            </div>
+
+            <div class="help-widget">
+              <span>
+                <img class="bg-lightblue rounded-full cursor-pointer"
+                  src="./assets/install_chatbot_dashboard/help-widget-icon.svg" alt="help-widget">
+              </span>
+
+              <span class="hidden text-dark bg-grey rounded p-3 w-full absolute -top-20 right-0">
+                <p class="text-xs">Est eu venenatis ut vestibulum a feugiat condimentum fermentum
+                  faucibus nam a
+                  quisque lacinia.</p>
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="flex justify-between p-5 bg-white rounded-lg border border-grey relative">
+            <div class="flex flex-col text-left">
+              <h4 class="text-[32px] leading-[1.2em] font-medium text-dark mb-1">0%</h4>
+              <p class="text-base opacity-90">Positive Feedback</p>
+            </div>
+
+            <div class="help-widget">
+              <span>
+                <img class="bg-lightblue rounded-full cursor-pointer"
+                  src="./assets/install_chatbot_dashboard/help-widget-icon.svg" alt="help-widget">
+              </span>
+
+              <span class="hidden text-dark bg-grey rounded p-3 w-full absolute -top-20 right-0">
+                <p class="text-xs">Est eu venenatis ut vestibulum a feugiat condimentum fermentum
+                  faucibus nam a
+                  quisque lacinia.</p>
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="flex justify-between p-5 bg-white rounded-lg border border-grey relative">
+            <div class="flex flex-col text-left">
+              <h4 class="text-[32px] leading-[1.2em] font-medium text-dark mb-1">0%</h4>
+              <p class="text-base opacity-90">Negative Feedback</p>
+            </div>
+
+            <div class="help-widget">
+              <span>
+                <img class="bg-lightblue rounded-full cursor-pointer"
+                  src="./assets/install_chatbot_dashboard/help-widget-icon.svg" alt="help-widget">
+              </span>
+
+              <span class="hidden text-dark bg-grey rounded p-3 w-full absolute -top-20 right-0">
+                <p class="text-xs">Est eu venenatis ut vestibulum a feugiat condimentum fermentum
+                  faucibus nam a
+                  quisque lacinia.</p>
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="grid grid-cols-2 col-span-12 gap-8">
+          <!-- 2 half columns yaha -->
+          <div class="flex flex-col justify-between p-7 gap-10 bg-lightblue rounded-xl">
+            <div class="flex justify-between items-center gap-2">
+              <img class="bg-dark bg-opacity-10 rounded-lg p-3" src="./assets/install_chatbot_dashboard/document.svg"
+                alt="help-widget">
+              <button
+                class="text-base leading-none text-dark border border-dark rounded-lg px-10 py-4 hover:bg-primary hover:text-white hover:border-primary">Add
+                Knowledge</button>
+            </div>
+
+            <div class="flex flex-col text-left">
+              <h4 class="text-[22px] mb-1">Data sources</h4>
+              <p class="text-base opacity-75">These data sources provide Kiosk with knowledge. Kiosk will use the
+                following content to search through data and use that to formulate its answers.</p>
+            </div>
+
+          </div>
+
+
+          <div class="flex flex-col justify-between p-7 gap-10 bg-lightblue rounded-xl">
+            <div class="flex justify-between items-center gap-2">
+              <img class="bg-dark bg-opacity-10 rounded-lg p-3" src="./assets/install_chatbot_dashboard/document.svg"
+                alt="help-widget">
+              <button
+                class="text-base leading-none text-dark border border-dark rounded-lg px-10 py-4 hover:bg-primary hover:text-white hover:border-primary">Activate
+                Now</button>
+            </div>
+
+            <div class="flex flex-col text-left">
+              <h4 class="text-2xl mb-1">Integrations</h4>
+              <p class="text-base opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Component End  -->
+
+</div>
 
 </html>

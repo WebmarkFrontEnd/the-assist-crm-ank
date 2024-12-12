@@ -8,8 +8,8 @@
       font-osw border-2 border-light inline-block bg-btn-primary text-light rounded-full shadow-md uppercase hover:shadow-xl hover:text-dark hover:bg-transparent hover:border-dark tracking-[1.08px];
   }
 
-  .btn-light {
-    @apply bg-light  text-dark border-light hover:bg-primary hover:text-light hover:border-primary;
+  .btn-yellow {
+    @apply bg-btn-secondary-bg  text-light border-light shadow-[#D6CF1F] hover:bg-btn-primary hover:text-light hover:border-btn-primary;
   }
 
   .btn-dark {
@@ -17,11 +17,16 @@
   }
 
   .sidebar-menu li a {
-    @apply flex items-center py-3 px-4 text-sm text-gray-300 hover:bg-white-40 hover:text-gray-100 rounded-md opacity-90 hover:opacity-100;
+    @apply flex items-center tracking-tight py-2.5 px-4 text-sm text-gray-300 hover:bg-[#3C3F4F] active:bg-[#3C3F4F] hover:text-gray-100 active:text-gray-100 rounded-md opacity-90 hover:opacity-100;
+  }
+
+  .sidebar-menu li:hover a,
+  .sidebar-menu li:hover img {
+    @apply opacity-100;
   }
 
   .sidebar-menu li img {
-    @apply mr-3;
+    @apply mr-3  opacity-60;
   }
 
   h1,
