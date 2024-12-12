@@ -9,11 +9,11 @@
   }
 
   .btn-yellow {
-    @apply bg-btn-secondary-bg  text-light border-light shadow-[#D6CF1F] hover:bg-btn-primary hover:text-light hover:border-btn-primary;
+    @apply bg-btn-secondary-bg  text-light border-light shadow-[#D6CF1F] hover:bg-btn-primary hover:text-light hover:border-light hover:shadow-btn-primary;
   }
 
   .btn-dark {
-    @apply bg-secondary text-light border-primary hover:bg-primary hover:text-light;
+    @apply bg-primary  text-light border-light shadow-primary hover:bg-btn-primary hover:text-light hover:border-light hover:shadow-btn-primary;
   }
 
   .sidebar-menu li a {
