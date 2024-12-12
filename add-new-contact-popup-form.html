@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Manrope:wght@200..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <nav class="flex justify-center bg-light-grey">
+    <img src="./img/assist-logo.png" alt="" class="w-[184px]">
+  </nav>
+
+
+  <!--- Login header -->
+  <section class="lg:flex lg:py-15 bg-[url('/img/login-header.jpg')]  bg-cover bg-no-repeat sm:px-5 flex px-5 py-10">
+    <div class="register-form bg-light max-w-[760px] w-[760px] m-auto py-[52px] px-10 rounded-2xl">
+      <h1 class="text-center text-[40px] mb-3">Register</h1>
+      <img src="./img/login-separator.svg" alt="seperator" class="mb-2 w-full">
+
+
+      <form>
+        <!-- Business Name -->
+        <div class="form-group flex-1 pb-4">
+          <label class="font-osw uppercase text-primary tracking-[0.96px]">Business Name</label>
+          <input type="text" required="true" placeholder="Business name"
+            class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+        </div>
+
+        <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+          <!-- Street -->
+          <div class="form-group flex-1">
+            <label class="font-osw uppercase text-primary tracking-[0.96px]">Street</label>
+            <input type="text" required="true" placeholder="Street Name"
+              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+          </div>
+
+          <!-- City -->
+          <div class="form-group flex-1">
+            <label class="font-osw uppercase text-primary tracking-[0.96px]">City</label>
+            <input type="text" required="true" placeholder="Enter City Name"
+              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+          </div>
+
+        </div>
+
+        <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+
+          <!-- State -->
+          <div class="form-group flex-1">
+            <label class="font-osw uppercase text-primary tracking-[0.96px]">State</label>
+            <input type="text" required="true" placeholder="Enter State Name"
+              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+          </div>
+
+          <!-- Zip Code -->
+          <div class="form-group flex-1">
+            <label class="font-osw uppercase text-primary tracking-[0.96px]">Zip Code</label>
+            <input type="text" required="true" placeholder="Enter Zip Code"
+              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+          </div>
+
+        </div>
+
+        <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+
+          <!-- Contact Email -->
+          <div class="form-group flex-1">
+            <label class="font-osw uppercase text-primary tracking-[0.96px]">Contact Email</label>
+            <input type="email" required="true" placeholder="Enter Contact Email"
+              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+          </div>
+
+          <!-- Phone -->
+          <div class="form-group flex-1">
+            <label class="font-osw uppercase text-primary tracking-[0.96px]">Phone</label>
+            <input type="tel" required="true" placeholder="Enter Phone Number"
+              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+          </div>
+
+        </div>
+
+        <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+
+          <!-- First Name -->
+          <div class="form-group flex-1">
+            <label class="font-osw uppercase text-primary tracking-[0.96px]">First Name</label>
+            <input type="text" required="true" placeholder="Enter First name"
+              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+          </div>
+
+          <!-- Last Name -->
+          <div class="form-group flex-1">
+            <label class="font-osw uppercase text-primary tracking-[0.96px]">Last Name</label>
+            <input type="text" required="true" placeholder="Enter Last Name"
+              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+          </div>
+
+        </div>
+
+        <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+
+          <!-- Password -->
+          <div class="form-group flex-1">
+            <label class="font-osw uppercase text-primary tracking-[0.96px]">Password</label>
+            <input type="password" required="true" placeholder="• • • • • • • • • •"
+              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+          </div>
+
+          <!-- Role (Dropdown) -->
+          <div class="form-group flex-1">
+            <label class="font-osw uppercase text-primary tracking-[0.96px]">Role</label>
+            <select required="true" class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+              <option value="" disabled selected>Default</option>
+              <option value="admin">Admin</option>
+              <option value="user">User</option>
+              <option value="manager">Manager</option>
+              <!-- Add more roles as needed -->
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Register Button -->
+        <div class="form-group flex-1">
+          <button type="submit" class="btn w-full ">Register</button>
+        </div>
+      </form>
+
+
+
+
+
+
+    </div>
+  </section>
+
+</body>
+
+</html>

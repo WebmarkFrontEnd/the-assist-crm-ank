@@ -1,5 +1,5 @@
 {
-  "name": "The-Assist-CRM",
+  "name": "the-assist-crm-ac",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,7 +15,7 @@
     "@tailwindcss/container-queries": "^0.1.1",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.48",
-    "tailwindcss": "^3.4.14",
+    "tailwindcss": "^3.4.16",
     "vite": "^5.4.11"
   }
 }
