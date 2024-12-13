@@ -870,6 +870,14 @@ h5 {
   right: px;
 }
 
+.top-0\.5 {
+  top: 0.125rem;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
 .z-10 {
   z-index: 10;
 }
