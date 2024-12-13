@@ -54,6 +54,10 @@
   h4 {
     @apply text-base;
   }
+
+  h5{
+    @apply text-lg;
+  }
 }
 
 /* Small Device Typography */

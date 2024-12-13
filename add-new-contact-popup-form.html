@@ -22,70 +22,11 @@
 
   <!--- Login header -->
   <section class="lg:flex lg:py-15 bg-[url('/img/login-header.jpg')]  bg-cover bg-no-repeat sm:px-5 flex px-5 py-10">
-    <div class="register-form bg-light max-w-[760px] w-[760px] m-auto py-[52px] px-10 rounded-2xl">
+    <div class="add-new-contact-form bg-light max-w-[760px] w-[760px] m-auto py-[52px] px-10 rounded-2xl">
       <h1 class="text-center text-[40px] mb-3">Add New Contact</h1>
 
 
       <form>
-        <!-- Business Name -->
-        <div class="form-group flex-1 pb-4">
-          <label class="font-osw uppercase text-primary tracking-[0.96px]">Business Name</label>
-          <input type="text" required="true" placeholder="Business name"
-            class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
-        </div>
-
-        <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
-          <!-- First Name -->
-          <div class="form-group flex-1">
-            <label class="font-osw uppercase text-primary tracking-[0.96px]">First Name</label>
-            <input type="text" required="true" /*placeholder="First Name"*/
-              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
-          </div>
-
-          <!-- Last Name -->
-          <div class="form-group flex-1">
-            <label class="font-osw uppercase text-primary tracking-[0.96px]">Last Name</label>
-            <input type="text" required="true" /*placeholder="Enter Last Name"*/
-              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
-          </div>
-
-        </div>
-
-        <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
-
-          <!-- State -->
-          <div class="form-group flex-1">
-            <label class="font-osw uppercase text-primary tracking-[0.96px]">State</label>
-            <input type="text" required="true" placeholder="Enter State Name"
-              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
-          </div>
-
-          <!-- Zip Code -->
-          <div class="form-group flex-1">
-            <label class="font-osw uppercase text-primary tracking-[0.96px]">Zip Code</label>
-            <input type="text" required="true" placeholder="Enter Zip Code"
-              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
-          </div>
-
-        </div>
-
-        <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
-
-          <!-- Contact Email -->
-          <div class="form-group flex-1">
-            <label class="font-osw uppercase text-primary tracking-[0.96px]">Contact Email</label>
-            <input type="email" required="true" placeholder="Enter Contact Email"
-              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
-          </div>
-
-          <!-- Phone -->
-          <div class="form-group flex-1">
-            <label class="font-osw uppercase text-primary tracking-[0.96px]">Phone</label>
-            <input type="tel" required="true" placeholder="Enter Phone Number"
-              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
-          </div>
-
-        </div>
 
         <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
 
@@ -103,6 +44,52 @@
               class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
           </div>
 
+        </div>
+
+        <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+
+          <!-- Contact Email -->
+          <div class="form-group flex-1">
+            <label class="font-osw uppercase text-primary tracking-[0.96px]">Email</label>
+            <input type="email" required="true" placeholder="Enter Email Address"
+              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+          </div>
+
+          <!-- Phone -->
+          <div class="form-group flex-1">
+            <label class="font-osw uppercase text-primary tracking-[0.96px]">Phone</label>
+            <input type="tel" required="true" placeholder="Enter Phone Number"
+              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+          </div>
+
+        </div>
+
+        <div>
+          <h5 class="bg-light-grey mb-4 px-3 py-2 rounded-lg">Local Information</h5>
+        </div>
+
+        <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+
+          <!-- State -->
+          <div class="form-group flex-1">
+            <label class="font-osw uppercase text-primary tracking-[0.96px]">State</label>
+            <input type="text" required="true" placeholder="Enter State Name"
+              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+          </div>
+
+          <!-- Postal Code -->
+          <div class="form-group flex-1">
+            <label class="font-osw uppercase text-primary tracking-[0.96px]">Postal Code</label>
+            <input type="text" required="true" placeholder="Enter Postal Code"
+              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+          </div>
+
+        </div>
+
+        <div class="form-group flex-1 pb-4">
+          <label class="font-osw uppercase text-primary tracking-[0.96px]">Country</label>
+          <input type="text" required="true" placeholder="Country"
+            class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
         </div>
 
         <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
