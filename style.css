@@ -1856,6 +1856,16 @@ h5 {
   padding-right: 11rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-9 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
