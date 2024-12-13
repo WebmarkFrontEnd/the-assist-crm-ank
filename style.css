@@ -1016,6 +1016,10 @@ h5 {
   margin-top: -1.25rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -1847,6 +1851,11 @@ h5 {
   padding-bottom: 52px;
 }
 
+.px-44 {
+  padding-left: 11rem;
+  padding-right: 11rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -2036,6 +2045,14 @@ h5 {
 
 .tracking-widest {
   letter-spacing: 0.1em;
+}
+
+.tracking-\[0\.px\] {
+  letter-spacing: 0.px;
+}
+
+.tracking-\[0\.84px\] {
+  letter-spacing: 0.84px;
 }
 
 .text-blue-500 {
