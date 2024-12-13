@@ -878,6 +878,22 @@ h5 {
   top: 2.5rem;
 }
 
+.right-\[-20px\] {
+  right: -20px;
+}
+
+.top-\[-5px\] {
+  top: -5px;
+}
+
+.top-\[-10px\] {
+  top: -10px;
+}
+
+.top-\[10px\] {
+  top: 10px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1207,6 +1223,10 @@ h5 {
 
 .w-\[165px\] {
   width: 165px;
+}
+
+.w-\[342px\] {
+  width: 342px;
 }
 
 .min-w-\[460px\] {
