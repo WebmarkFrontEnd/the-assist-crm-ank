@@ -782,6 +782,94 @@ h5 {
   top: 50%;
 }
 
+.top-2 {
+  top: 0.5rem;
+}
+
+.top-\[\] {
+  top: ;
+}
+
+.top-\[1\%\] {
+  top: 1%;
+}
+
+.top-\[2\%\] {
+  top: 2%;
+}
+
+.top-\[2px\] {
+  top: 2px;
+}
+
+.top-\[2\] {
+  top: 2;
+}
+
+.top-1\.5 {
+  top: 0.375rem;
+}
+
+.-top-1\.5 {
+  top: -0.375rem;
+}
+
+.-top-1 {
+  top: -0.25rem;
+}
+
+.top-5 {
+  top: 1.25rem;
+}
+
+.-top-2 {
+  top: -0.5rem;
+}
+
+.right-1\/4 {
+  right: 25%;
+}
+
+.right-1 {
+  right: 0.25rem;
+}
+
+.right-3\/4 {
+  right: 75%;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.right-\[\] {
+  right: ;
+}
+
+.right-\[4\] {
+  right: 4;
+}
+
+.right-\[4px\] {
+  right: 4px;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.right-\[0px\] {
+  right: 0px;
+}
+
+.right-\[1px\] {
+  right: 1px;
+}
+
+.right-\[px\] {
+  right: px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1017,6 +1105,22 @@ h5 {
   max-height: 16rem;
 }
 
+.max-h-\[700px\] {
+  max-height: 700px;
+}
+
+.max-h-\[725px\] {
+  max-height: 725px;
+}
+
+.max-h-\[660px\] {
+  max-height: 660px;
+}
+
+.max-h-\[620px\] {
+  max-height: 620px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1135,6 +1239,14 @@ h5 {
 
 .max-w-\[180px\] {
   max-width: 180px;
+}
+
+.max-w-\[px\] {
+  max-width: px;
+}
+
+.max-w-\[680px\] {
+  max-width: 680px;
 }
 
 .flex-1 {
@@ -1284,6 +1396,10 @@ h5 {
 
 .overflow-auto {
   overflow: auto;
+}
+
+.overflow-scroll {
+  overflow: scroll;
 }
 
 .overflow-x-auto {
@@ -1560,6 +1676,14 @@ h5 {
   --tw-bg-opacity: 0.1;
 }
 
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
+}
+
+.bg-opacity-90 {
+  --tw-bg-opacity: 0.9;
+}
+
 .bg-\[url\(\'\/img\/login-header\.jpg\'\)\] {
   background-image: url('/img/login-header.jpg');
 }
@@ -1615,6 +1739,10 @@ h5 {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .px-1 {
@@ -1747,6 +1875,11 @@ h5 {
   padding-bottom: 52px;
 }
 
+.py-\[px\] {
+  padding-top: px;
+  padding-bottom: px;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1785,6 +1918,10 @@ h5 {
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 
 .text-left {

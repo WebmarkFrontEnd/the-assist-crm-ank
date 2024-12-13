@@ -14,174 +14,185 @@
 
 </head>
 
-<body>
+<body class="bg-primary bg-opacity-90">
 
-  <!--- Login header -->
-  <section class="lg:flex lg:py-15 sm:px-5 flex px-5 py-10">
-    <div class="add-new-contact-form bg-light max-w-[760px] w-[760px] m-auto py-[52px] px-10 rounded-2xl">
-      <h1 class="text-center text-[26px] mb-5">Add New Contact</h1>
+  <section class="py-12">
 
-
+    <div class="add-new-contact-form bg-light max-w-[680px] m-auto p-10 rounded-2xl relative">
+      
       <form>
 
-        <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+        <h1 class="text-center text-[26px] mb-5">Add New Contact</h1>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute top-1px right-0">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+        </button>
 
-          <!-- First Name -->
-          <div class="form-group flex-1">
-            <label class="font-osw uppercase text-primary tracking-[0.96px]">First Name</label>
-            <input type="text" required="true"
-              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
-          </div>
+        <div class="max-h-[620px] overflow-y-auto">
 
-          <!-- Last Name -->
-          <div class="form-group flex-1">
-            <label class="font-osw uppercase text-primary tracking-[0.96px]">Last Name</label>
-            <input type="text" required="true"
-              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
-          </div>
+          <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
 
-        </div>
-
-        <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
-
-          <!-- Contact Email -->
-          <div class="form-group flex-1">
-            <label class="font-osw uppercase text-primary tracking-[0.96px]">Email</label>
-            <input type="email" required="true"
-              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
-          </div>
-
-          <!-- Phone -->
-          <div class="form-group flex-1">
-            <label class="font-osw uppercase text-primary tracking-[0.96px]">Phone</label>
-            <input type="tel" required="true"
-              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
-          </div>
-
-        </div>
-
-        <!-- Local Information-->
-        <div>
-          <h5 class="bg-light-grey mb-4 px-3 py-2 rounded-lg">Local Information</h5>
-        </div>
-
-        <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
-
-          <!-- Address -->
-          <div class="form-group flex-1">
-            <label class="font-osw uppercase text-primary tracking-[0.96px]">Address</label>
-            <input type="text" required="true"
-              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
-          </div>
-
-          <!-- City -->
-          <div class="form-group flex-1">
-            <label class="font-osw uppercase text-primary tracking-[0.96px]">City</label>
-            <input type="text" required="true"
-              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
-          </div>
-
-        </div>
-
-        <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
-
-          <!-- State -->
-          <div class="form-group flex-1">
-            <label class="font-osw uppercase text-primary tracking-[0.96px]">State</label>
-            <input type="text" required="true"
-              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
-          </div>
-
-          <!-- Postal Code -->
-          <div class="form-group flex-1">
-            <label class="font-osw uppercase text-primary tracking-[0.96px]">Postal Code</label>
-            <input type="text" required="true"
-              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
-          </div>
-
-        </div>
-
-        <div class="form-group flex-1 pb-4">
-          <label class="font-osw uppercase text-primary tracking-[0.96px]">Country</label>
-          <input type="text" required="true"
-            class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
-        </div>
-
-        <!-- Company Information-->
-        <div>
-          <h5 class="bg-light-grey mb-4 px-3 py-2 rounded-lg">Company Information</h5>
-        </div>
-
-        <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
-
-          <!-- Address -->
-          <div class="form-group flex-1">
-            <label class="font-osw uppercase text-primary tracking-[0.96px]">Address</label>
-            <input type="text" required="true"
-              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
-          </div>
-
-          <!-- City -->
-          <div class="form-group flex-1">
-            <label class="font-osw uppercase text-primary tracking-[0.96px]">City</label>
-            <input type="text" required="true"
-              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
-          </div>
-
-        </div>
-
-        <!-- Additional Information-->
-        <div>
-          <h5 class="bg-light-grey mb-4 px-3 py-2 rounded-lg">Additional Information</h5>
-        </div>
-        
-        <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
-        
-          <!-- Date Of Birth -->
-          <div class="form-group flex-1">
-            <label class="font-osw uppercase text-primary tracking-[0.96px]">Date Of Birth</label>
-              <input type="text" required="true" placeholder="mm/dd/yyyy"
-                  class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
-          </div>
-        
-          <!-- Timezone -->
-          <div class="form-group flex-1">
-            <label class="font-osw uppercase text-primary tracking-[0.96px]">Timezone</label>
+            <!-- First Name -->
+            <div class="form-group flex-1">
+              <label class="font-osw uppercase text-primary tracking-[0.96px]">First Name</label>
               <input type="text" required="true"
-                  class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
-          </div>
-        
-        </div>
+                class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+            </div>
 
-        <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
-        
-          <!-- Tags -->
-          <div class="form-group flex-1">
-            <label class="font-osw uppercase text-primary tracking-[0.96px]">Tags</label>
-              <input type="text" required="true" placeholder="Comma-separated tags"
-                  class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
-          </div>
-        
-          <!-- Assigned To -->
-          <div class="form-group flex-1">
-            <label class="font-osw uppercase text-primary tracking-[0.96px]">Assigned To</label>
+            <!-- Last Name -->
+            <div class="form-group flex-1">
+              <label class="font-osw uppercase text-primary tracking-[0.96px]">Last Name</label>
               <input type="text" required="true"
-                  class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+            </div>
+
           </div>
-        
+
+          <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+
+            <!-- Contact Email -->
+            <div class="form-group flex-1">
+              <label class="font-osw uppercase text-primary tracking-[0.96px]">Email</label>
+              <input type="email" required="true"
+                class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+            </div>
+
+            <!-- Phone -->
+            <div class="form-group flex-1">
+              <label class="font-osw uppercase text-primary tracking-[0.96px]">Phone</label>
+              <input type="tel" required="true"
+                class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+            </div>
+
+          </div>
+
+          <!-- Local Information-->
+          <div>
+            <h5 class="bg-light-grey mb-4 px-3 py-2 rounded-lg">Local Information</h5>
+          </div>
+
+          <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+
+            <!-- Address -->
+            <div class="form-group flex-1">
+              <label class="font-osw uppercase text-primary tracking-[0.96px]">Address</label>
+              <input type="text" required="true"
+                class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+            </div>
+
+            <!-- City -->
+            <div class="form-group flex-1">
+              <label class="font-osw uppercase text-primary tracking-[0.96px]">City</label>
+              <input type="text" required="true"
+                class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+            </div>
+
+          </div>
+
+          <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+
+            <!-- State -->
+            <div class="form-group flex-1">
+              <label class="font-osw uppercase text-primary tracking-[0.96px]">State</label>
+              <input type="text" required="true"
+                class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+            </div>
+
+            <!-- Postal Code -->
+            <div class="form-group flex-1">
+              <label class="font-osw uppercase text-primary tracking-[0.96px]">Postal Code</label>
+              <input type="text" required="true"
+                class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+            </div>
+
+          </div>
+
+          <div class="form-group flex-1 pb-4">
+            <label class="font-osw uppercase text-primary tracking-[0.96px]">Country</label>
+            <input type="text" required="true"
+              class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+          </div>
+
+          <!-- Company Information-->
+          <div>
+            <h5 class="bg-light-grey mb-4 px-3 py-2 rounded-lg">Company Information</h5>
+          </div>
+
+          <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+
+            <!-- Address -->
+            <div class="form-group flex-1">
+              <label class="font-osw uppercase text-primary tracking-[0.96px]">Address</label>
+              <input type="text" required="true"
+                class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+            </div>
+
+            <!-- City -->
+            <div class="form-group flex-1">
+              <label class="font-osw uppercase text-primary tracking-[0.96px]">City</label>
+              <input type="text" required="true"
+                class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+            </div>
+
+          </div>
+
+          <!-- Additional Information-->
+          <div>
+            <h5 class="bg-light-grey mb-4 px-3 py-2 rounded-lg">Additional Information</h5>
+          </div>
+          
+          <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+          
+            <!-- Date Of Birth -->
+            <div class="form-group flex-1">
+              <label class="font-osw uppercase text-primary tracking-[0.96px]">Date Of Birth</label>
+                <input type="text" required="true" placeholder="mm/dd/yyyy"
+                    class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+            </div>
+          
+            <!-- Timezone -->
+            <div class="form-group flex-1">
+              <label class="font-osw uppercase text-primary tracking-[0.96px]">Timezone</label>
+                <input type="text" required="true"
+                    class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+            </div>
+          
+          </div>
+
+          <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+          
+            <!-- Tags -->
+            <div class="form-group flex-1">
+              <label class="font-osw uppercase text-primary tracking-[0.96px]">Tags</label>
+                <input type="text" required="true" placeholder="Comma-separated tags"
+                    class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+            </div>
+          
+            <!-- Assigned To -->
+            <div class="form-group flex-1">
+              <label class="font-osw uppercase text-primary tracking-[0.96px]">Assigned To</label>
+                <input type="text" required="true"
+                    class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+            </div>
+          
+          </div>
+
         </div>
 
-        <!-- Register Button -->
-        <div class="form-group flex flex-row gap-3 justify-center">
-          <button type="submit" class="btn w-[165px]">Save Button</button>
-          <button type="submit" class="btn btn-dark w-[165px]">Cancel</button>
+        <div class="px-8 py-4 shadow-sm">
+          <!-- Buttons -->
+          <div class="form-group flex flex-row gap-3 justify-center">
+            <button type="submit" class="btn w-[165px]">Save Button</button>
+            <button type="submit" class="btn btn-dark w-[165px]">Cancel</button>
+          </div>
+
         </div>
+
       </form>
 
-
-
-
     </div>
+
   </section>
 
 </body>
