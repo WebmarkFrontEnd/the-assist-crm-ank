@@ -1074,6 +1074,14 @@ h5 {
   margin-bottom: 1.75rem;
 }
 
+.mt-\[\] {
+  margin-top: ;
+}
+
+.mt-\[18px\] {
+  margin-top: 18px;
+}
+
 .block {
   display: block;
 }
@@ -1458,6 +1466,18 @@ h5 {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-\[\] {
+  gap: ;
+}
+
+.gap-\[4px\] {
+  gap: 4px;
 }
 
 .gap-x-7 {
@@ -2204,6 +2224,10 @@ h5 {
 
 .leading-7 {
   line-height: 1.44em;
+}
+
+.leading-tight {
+  line-height: 1.25;
 }
 
 .-tracking-\[0\.68px\] {
