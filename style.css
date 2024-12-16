@@ -1239,6 +1239,18 @@ h5 {
   width: 100vw;
 }
 
+.w-\[420px\] {
+  width: 420px;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[354px\] {
+  width: 354px;
+}
+
 .min-w-\[460px\] {
   min-width: 460px;
 }
@@ -1269,6 +1281,14 @@ h5 {
 
 .max-w-xs {
   max-width: 20rem;
+}
+
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[420px\] {
+  max-width: 420px;
 }
 
 .flex-1 {
