@@ -1070,6 +1070,10 @@ h5 {
   margin-inline-start: 1.25rem;
 }
 
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
 .block {
   display: block;
 }
