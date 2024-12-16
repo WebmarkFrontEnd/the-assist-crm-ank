@@ -48,9 +48,12 @@ module.exports = {
       },
 
       fontSize: {
-        '3xl-md': '32px',
-        '3xl-2xl': '56px',
-        '2xl-2xl': '32px',
+        // '3xl-md': '32px',
+        // '3xl-2xl': '56px',
+        // '2xl-2xl': '32px',
+        '4xl-3xl': '34px', // 3xl: 'screen size',
+        '2xl-3xl': '26px', // 3xl: 'screen size',
+        'xl-3xl': '22px', // 3xl: 'screen size',
       },
 
       lineHeight: {
