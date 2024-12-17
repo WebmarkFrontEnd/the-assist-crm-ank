@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Dashboard</title>
+</head>
+
+<body class="font-popp">
+  <!-- Dashboard-->
+  <div class="flex w-screen h-screen bg-[#F4F2F0]">
+    <!-- Sidebar Menu -->
+    <div class="flex flex-col left-0 top-0 w-60 h-full bg-[#262A3B] py-4 z-50 sidebar-menu transition-transform">
+      <a href="#" class="flex items-center justify-center mb-4 border-b-[1px] border-[#3C3F4F]">
+        <img src="./img/leads-logo.png" alt="leads logo">
+        <!-- <span class="text-lg font-bold text-white ml-3">Logo</span> -->
+      </a>
+      <div class="px-4 h-full">
+        <h4 class="text-sm text-light opacity-40 uppercase font-osw tracking-tight px-4">Main Menu</h4>
+        <ul class="mt-4 *:mb-1">
+
+          <li class="active">
+            <a href="#">
+              <img src="./img/dashboard.png" alt="dashboard">
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/leads+.png" alt="leads">
+              <span>Leads</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./img/pipeline.png" alt="pipeline">
+              <span>Pipeline</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./img/follow-up.png" alt="follow-up">
+              <span>Follow-up</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./img/marketing-hub.png" alt="marketing-hub">
+              <span>Marketing Hub-up</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./img/integrations.png" alt="integrations">
+              <span>Integrations</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./img/extra-love.png" alt="extra-love">
+              <span>Extra-love</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="mt-5 pt-5 *:mb-1 border-t-[1px] border-[#3C3F4F]">
+          <li>
+            <a href="#">
+              <img src="./img/ambassador.png" alt="ambassador">
+              <span>ambassador</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/notifications.png" alt="notifications">
+              <span>Notifications</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/pricing.png" alt="pricing">
+              <span>Pricing</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/contacts.png" alt="contacts">
+              <span class="text-sm">contacts</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./img/csv-importer.png" alt="csv-importer">
+              <span>CSV Importer</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./img/assistant.png" alt="assistant">
+              <span>Assistant</span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="px-4">
+        <ul class="mt-4 *:mb-1">
+          <li>
+            <a href="#">
+              <img src="./img/logout.png" alt="logout">
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Main Container -->
+    <div class="flex flex-col w-4/6 flex-grow">
+      <div class="flex items-center justify-between flex-shrink-0 p-4 bg-white">
+        <button class="btn flex items-center gap-3 py-2.5 px-8">Search
+          MLS or Contacts
+          <!-- <img src="./img/search-icon.svg" alt="leads logo"> -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-5">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg>
+        </button>
+        <button class="btn btn-yellow flex items-center gap-3 py-2.5 px-8">Add Client/Alert
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+
+        </button>
+      </div>
+      <div class="flex-grow p-8 overflow-auto rounded-2xl border border-grey">
+        <div class="flex bg-white rounded-xl overflow-hidden">
+          <div class="w-[57%]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.437719665241!2d-86.70500532419977!3d35.96072257249838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886470d597197c69%3A0x31ded115e0354105!2s9914%20Elland%20Rd%2C%20Brentwood%2C%20TN%2037027%2C%20USA!5e0!3m2!1sen!2sin!4v1733997731047!5m2!1sen!2sin"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="w-[43%]">
+            <div class="bg-light m-auto ">
+
+              <form>
+                <div class="p-8 pb-5 max-h-[620px] overflow-y-auto">
+                  <h1 class="text-2xl-3xl mb-5">Search Properties</h1>
+                  <!-- MLS Number -->
+                  <div class="form-group flex-1 pb-4">
+                    <label class="font-osw uppercase text-primary tracking-[0.96px]">MLS Number</label>
+                    <input type="text" required="true"
+                      class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                  </div>
+
+                  <!-- Address -->
+                  <div class="form-group flex-1 pb-4">
+                    <label class="font-osw uppercase text-primary tracking-[0.96px]">City</label>
+                    <input type="text" required="true"
+                      class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                  </div>
+
+                  <!-- Price -->
+                  <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+                    <div class="form-group flex-1">
+                      <label class="font-osw uppercase text-primary tracking-[0.96px]">Min Price</label>
+                      <input type="text" required="true"
+                        class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                    </div>
+
+                    <div class="form-group flex-1">
+                      <label class="font-osw uppercase text-primary tracking-[0.96px]">Max Price</label>
+                      <input type="text" required="true"
+                        class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                    </div>
+                  </div>
+
+                  <!-- Bedrooms -->
+                  <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+                    <div class="form-group flex-1">
+                      <label class="font-osw uppercase text-primary tracking-[0.96px]">Min Bedrooms</label>
+                      <input type="text" required="true"
+                        class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                    </div>
+
+                    <div class="form-group flex-1">
+                      <label class="font-osw uppercase text-primary tracking-[0.96px]">Max Bedrooms</label>
+                      <input type="text" required="true"
+                        class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                    </div>
+                  </div>
+
+                  <!-- Advanced Search Button -->
+                  <div class="flex mb-8">
+                    <button class="btn btn-dark w-full flex items-center justify-between gap-3 py-3 px-8">Advanced
+                      Search
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                      </svg>
+
+                    </button>
+
+                  </div>
+
+                  <!-- Property Type (Dropdown) -->
+                  <div class="form-group flex-1 pb-4">
+                    <label class="font-osw uppercase text-primary tracking-[0.96px]">Property Type</label>
+                    <select required="true"
+                      class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                      <option value="" disabled selected>Select Property Type</option>
+                      <option value="admin">Property Type 1</option>
+                      <option value="user">Property Type 2</option>
+                      <option value="manager">Property Type 3</option>
+                    </select>
+                  </div>
+
+                  <!-- Year Built -->
+                  <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+                    <div class="form-group flex-1">
+                      <label class="font-osw uppercase text-primary tracking-[0.96px]">Min Year Built</label>
+                      <input type="email" required="true"
+                        class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                    </div>
+
+                    <div class="form-group flex-1">
+                      <label class="font-osw uppercase text-primary tracking-[0.96px]">Max Year Built</label>
+                      <input type="tel" required="true"
+                        class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                    </div>
+                  </div>
+
+                  <!-- Lot Size -->
+                  <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+                    <div class="form-group flex-1">
+                      <label class="font-osw uppercase text-primary tracking-[0.96px]">Min Lot Size (Acres)</label>
+                      <input type="text" required="true"
+                        class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                    </div>
+
+                    <div class="form-group flex-1">
+                      <label class="font-osw uppercase text-primary tracking-[0.96px]">Max Lot Size (Acres)</label>
+                      <input type="text" required="true"
+                        class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                    </div>
+
+                  </div>
+
+                  <!-- Building Area -->
+                  <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+                    <div class="form-group flex-1">
+                      <label class="font-osw uppercase text-primary tracking-[0.96px]">Min Building Area (Sq Ft)</label>
+                      <input type="text" required="true"
+                        class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                    </div>
+
+                    <div class="form-group flex-1">
+                      <label class="font-osw uppercase text-primary tracking-[0.96px]">Max Building Area (Sq Ft)</label>
+                      <input type="text" required="true"
+                        class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                    </div>
+
+                  </div>
+
+                  <!-- Pool (Dropdown) -->
+                  <div class="form-group flex-1 pb-4">
+                    <label class="font-osw uppercase text-primary tracking-[0.96px]">Pool</label>
+                    <select required="true"
+                      class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                      <option value="" disabled selected>Select</option>
+                      <option value="admin">Pool 1</option>
+                      <option value="user">Pool 2</option>
+                      <option value="manager">Pool 3</option>
+                    </select>
+                  </div>
+
+                  <!-- Interior/Exterior Features -->
+                  <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+                    <div class="form-group flex-1">
+                      <label class="font-osw uppercase text-primary tracking-[0.96px]">Interior Features</label>
+                      <input type="email" required="true"
+                        class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                    </div>
+
+                    <div class="form-group flex-1">
+                      <label class="font-osw uppercase text-primary tracking-[0.96px]">Exterior Features</label>
+                      <input type="tel" required="true"
+                        class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                    </div>
+                  </div>
+
+                  <!-- Stories -->
+                  <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+                    <div class="form-group flex-1">
+                      <label class="font-osw uppercase text-primary tracking-[0.96px]">Min Stories</label>
+                      <input type="email" required="true"
+                        class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                    </div>
+
+                    <div class="form-group flex-1">
+                      <label class="font-osw uppercase text-primary tracking-[0.96px]">Max Stories</label>
+                      <input type="tel" required="true"
+                        class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                    </div>
+                  </div>
+
+                  <!-- Architectural Style/Accessibility Features -->
+                  <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+                    <div class="form-group flex-1">
+                      <label class="font-osw uppercase text-primary tracking-[0.96px]">Architectural Style</label>
+                      <input type="email" required="true"
+                        class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                    </div>
+
+                    <div class="form-group flex-1">
+                      <label class="font-osw uppercase text-primary tracking-[0.96px]">Accessibility Features</label>
+                      <input type="tel" required="true"
+                        class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                    </div>
+                  </div>
+
+                  <!-- Neighborhood/School District -->
+                  <div class="form-group mb-5 flex justify-between gap-4 flex-col xl:flex-row">
+                    <div class="form-group flex-1">
+                      <label class="font-osw uppercase text-primary tracking-[0.96px]">Neighborhood</label>
+                      <input type="email" required="true"
+                        class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                    </div>
+
+                    <div class="form-group flex-1">
+                      <label class="font-osw uppercase text-primary tracking-[0.96px]">School District</label>
+                      <input type="tel" required="true"
+                        class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                    </div>
+                  </div>
+
+                  <!-- Zip Code -->
+                  <div class="form-group flex-1 pb-4">
+                    <label class="font-osw uppercase text-primary tracking-[0.96px]">Zip Code</label>
+                    <input type="text" required="true"
+                      class="w-full border-[1px] border-[#262A3B1A] rounded-lg text-base py-3 px-5 mt-2">
+                  </div>
+
+                </div>
+
+                <div class="px-8 py-4 shadow-sm">
+                  <!-- Search Properties Button -->
+                  <div class="form-group flex-1">
+                    <!-- <button type="submit" class="btn w-full ">Register</button> -->
+                    <button class="btn w-full flex items-center justify-between gap-3 py-2.5 px-8">Search
+                      MLS or Contacts
+                      <!-- <img src="./img/search-icon.svg" alt="leads logo"> -->
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+
+
+</html>
