@@ -1096,6 +1096,10 @@ h5 {
   margin-inline-start: 0.75rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .block {
   display: block;
 }
@@ -1358,6 +1362,18 @@ h5 {
   width: 57%;
 }
 
+.w-9 {
+  width: 2.25rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
 .min-w-\[460px\] {
   min-width: 460px;
 }
@@ -1618,6 +1634,11 @@ h5 {
   row-gap: 1rem;
 }
 
+.gap-x-5 {
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
 .self-center {
   align-self: center;
 }
@@ -1670,6 +1691,11 @@ h5 {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-t-2xl {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 .rounded-bl-md {
@@ -2233,6 +2259,10 @@ h5 {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .text-left {
