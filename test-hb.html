@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Dashboard</title>
+</head>
+
+<body class="text-gray-800 font-inter">
+  <!-- Dashboard Page-->
+  <div class="flex w-screen h-screen">
+
+    <!-- Component Start -->
+    <div class="flex flex-col left-0 top-0 w-60 h-full bg-[#262A3B] py-4 z-50 sidebar-menu transition-transform">
+      <a href="#" class="flex items-center justify-center mb-4 border-b-[1px] border-[#3C3F4F]">
+        <img src="./img/leads-logo.png" alt="">
+        <!-- <span class="text-lg font-bold text-white ml-3">Logo</span> -->
+      </a>
+      <div class="px-4 h-full">
+        <h4 class="text-sm text-light opacity-40 uppercase font-osw tracking-tight px-4">Main Menu</h4>
+        <ul class="mt-4 *:mb-1">
+
+          <li class="active">
+            <a href="#">
+              <img src="./img/dashboard.png" alt="dashboard">
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/leads+.png" alt="leads">
+              <span>Leads</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./img/pipeline.png" alt="pipeline">
+              <span>Pipeline</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./img/follow-up.png" alt="follow-up">
+              <span>Follow-up</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./img/marketing-hub.png" alt="marketing-hub">
+              <span>Marketing Hub-up</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./img/integrations.png" alt="integrations">
+              <span>Integrations</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./img/extra-love.png" alt="extra-love">
+              <span>Extra-love</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="mt-5 pt-5 *:mb-1 border-t-[1px] border-[#3C3F4F]">
+          <li>
+            <a href="#">
+              <img src="./img/ambassador.png" alt="ambassador">
+              <span>ambassador</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/notifications.png" alt="notifications">
+              <span>Notifications</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/pricing.png" alt="pricing">
+              <span>Pricing</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/contacts.png" alt="contacts">
+              <span class="text-sm">contacts</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./img/csv-importer.png" alt="csv-importer">
+              <span>CSV Importer</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./img/assistant.png" alt="assistant">
+              <span>Assistant</span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="px-4">
+        <ul class="mt-4 *:mb-1">
+          <li>
+            <a href="#">
+              <img src="./img/logout.png" alt="logout">
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex flex-col w-4/6 flex-grow">
+      <div class="flex items-center justify-between flex-shrink-0 p-4">
+        <button class="btn flex items-center gap-3 py-2.5 px-8">Search MLS or Contacts
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg>
+        </button>
+        <button class="btn btn-yellow flex items-center gap-3 py-2.5 px-8">Add Client/Alert
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+
+        </button>
+      </div>
+      <div class="flex-grow p-8 overflow-auto rounded-2xl bg-light-grey border border-grey">
+        <h1>Contacts Us Here</h1>
+        <div class="mt-6 flex flex-row gap-8 items-center">
+          <button class="btn flex items-center gap-3 py-2.5 px-8">
+            Add Contact
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z">
+              </path>
+            </svg>
+          </button>
+
+          <form class="bg-light h-14 flex items-center p-1.5">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"
+                stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path>
+              </svg></i></button>
+          </form>
+
+        </div>
+
+        <table class="mt-12 rounded-lg overflow-hidden w-full">
+          <thead class="bg-primary h-14">
+            <tr class="*:text-light *:text-left *:px-6">
+              <th>Name HB</th>
+              <th>Email Address</th>
+              <th>Headline</th>
+              <th>Send Message</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody class="*:border-[#262a3b1a] *:border-2 *:h-20">
+            <tr class="*:px-6">
+              <td class="font-semibold">James Washington</td>
+              <td><a href="mailto:mcbridekelly@yahoo.com">mcbridekelly@yahoo.com</a></td>
+              <td>N/A</td>
+              <td><button class="btn flex items-center gap-3 py-2.5 px-8">
+                  Send Message
+                </button></td>
+              <td><a href="#"><img src="./img/edit.svg" alt=""></a></td>
+              <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                  </svg></a></td>
+            </tr>
+            <tr class="*:px-6">
+              <td class="font-semibold">Jennifer Rivera</td>
+              <td><a href="mailto:gwalker@gmail.com">gwalker@gmail.com</a></td>
+              <td>N/A</td>
+              <td><button class="btn flex items-center gap-3 py-2.5 px-8">
+                  Send Message
+                </button></td>
+              <td><a href="#"><img src="./img/edit.svg" alt=""></a></td>
+              <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                  </svg></a></td>
+            </tr>
+            <tr class="*:px-6">
+              <td class="font-semibold">Alan Ramirez</td>
+              <td><a href="mailto:jesus94@gmail.com">jesus94@gmail.com</a></td>
+              <td>N/A</td>
+              <td><button class="btn flex items-center gap-3 py-2.5 px-8">
+                  Send Message
+                </button></td>
+              <td><a href="#"><img src="./img/edit.svg" alt=""></a></td>
+              <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                  </svg></a></td>
+            </tr>
+            <tr class="*:px-6">
+              <td class="font-semibold">Sarah Thomas</td>
+              <td><a href="mailto:georgewheeler@elliott-flores.com">georgewheeler@elliott-flores.com</a></td>
+              <td>N/A</td>
+              <td><button class="btn flex items-center gap-3 py-2.5 px-8">
+                  Send Message
+                </button></td>
+              <td><a href="#"><img src="./img/edit.svg" alt=""></a></td>
+              <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                  </svg></a></td>
+            </tr>
+            <tr class="*:px-6">
+              <td class="font-semibold">Katherine Ferguson</td>
+              <td><a href="mailto:robertcook@hotmail.com">robertcook@hotmail.com</a></td>
+              <td>N/A</td>
+              <td><button class="btn flex items-center gap-3 py-2.5 px-8">
+                  Send Message
+                </button></td>
+              <td><a href="#"><img src="./img/edit.svg" alt=""></a></td>
+              <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                  </svg></a></td>
+            </tr>
+            <tr class="*:px-6">
+              <td class="font-semibold">Crystal Franco</td>
+              <td><a href="mailto:lesliejohnson@hotmail.com">lesliejohnson@hotmail.com</a></td>
+              <td>N/A</td>
+              <td><button class="btn flex items-center gap-3 py-2.5 px-8">
+                  Send Message
+                </button></td>
+              <td><a href="#"><img src="./img/edit.svg" alt=""></a></td>
+              <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                  </svg></a></td>
+            </tr>
+            <tr class="*:px-6">
+              <td class="font-semibold">Mike Garcia</td>
+              <td><a href="mailto:angela39@gmail.com">angela39@gmail.com</a></td>
+              <td>N/A</td>
+              <td><button class="btn flex items-center gap-3 py-2.5 px-8">
+                  Send Message
+                </button></td>
+              <td><a href="#"><img src="./img/edit.svg" alt=""></a></td>
+              <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                  </svg></a></td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+    <!-- Component End  -->
+
+  </div>
+
+</body>
+
+
+
+</html>
