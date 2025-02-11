@@ -1162,6 +1162,10 @@ h5 {
   height: 0.5rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-3 {
   height: 0.75rem;
 }
@@ -1204,10 +1208,6 @@ h5 {
 
 .h-svh {
   height: 100svh;
-}
-
-.h-20 {
-  height: 5rem;
 }
 
 .max-h-64 {
